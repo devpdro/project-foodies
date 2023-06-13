@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 .navbar_logo {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", cursive;
     font-weight: 900;
-    margin-left: -1.2rem;
-    font-size: 2rem;
     color: #304880;
+    font-size: 2rem;
+    margin-left: -1.2rem; 
 }
+
 .navbar_menu {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", cursive;
     font-weight: 800;
-    margin-top: 0.7rem;
     font-size: 1.2rem;
+    margin-top: 0.7rem
 }
