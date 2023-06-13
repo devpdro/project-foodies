@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+
+/* ! CONTAINER */
+
+#container_width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*! BARRA DE NAVEGAÇÃO/NAVBAR */
+
 .navbar_logo {
     font-family: "Poppins", cursive;
     font-weight: 900;
-    color: #304880;
+    color: #130f40;
     font-size: 2rem;
     margin-left: -1.2rem; 
 }
@@ -13,5 +23,36 @@
     font-family: "Poppins", cursive;
     font-weight: 800;
     font-size: 1.2rem;
-    margin-top: 0.7rem
+    margin-top: 0.7rem;
 }
+
+/*! CABEÇALHO/HEADER */ 
+
+#header_container {
+    margin-top: 9rem;
+}
+
+.title_welcome {
+    color: #27ae60 ;
+    margin-bottom: 0.7rem;
+}
+
+.title_different_tastes {
+    margin-bottom: 0.8rem;
+    color: #130f40;
+}
+
+.button_order_now {
+    margin-top: 0.4rem;
+    background-color: #27ae60;
+    color: white;
+}
+
+.image_overlay {
+    position: absolute;
+    overflow: hidden;
+    top: -230px;
+    left: -400px;
+    height: 160%!important;
+}
+

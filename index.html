@@ -17,52 +17,104 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body id="container_width">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <iconify-icon icon="fe:cutlery" style="color: #27ae60;" width="40" height="45"></iconify-icon>
-        </a>
-        <a class="navbar_logo">Food</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto ml-auto navbar_menu">
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Popular</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Menu</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Order</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Blogs</a>
-            </li>
-          </ul>
-          <div class="navbar-icons mt-3">
-            <iconify-icon class="mr-3" icon="fe:search" style="color: #304880;" width="35" height="35"></iconify-icon>
-            <iconify-icon class="mr-3" icon="fe:remove-cart" style="color: #304880;" width="35" height="35"></iconify-icon>
-            <iconify-icon class="mr-3" icon="fe:user" style="color: #304880;" width="35" height="35"></iconify-icon>
+      <a class="navbar-brand" href="#">
+        <iconify-icon
+          icon="fe:cutlery"
+          style="color: #27ae60"
+          width="40"
+          height="45"
+        ></iconify-icon>
+      </a>
+      <a class="navbar_logo">Food</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto ml-auto navbar_menu">
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#">Blogs</a>
+          </li>
+        </ul>
+        <div class="navbar-icons mt-3">
+          <iconify-icon
+            class="mr-3"
+            icon="fe:search"
+            style="color: #130f40"
+            width="35"
+            height="35"
+          ></iconify-icon>
+          <iconify-icon
+            class="mr-3"
+            icon="fe:remove-cart"
+            style="color: #130f40"
+            width="35"
+            height="35"
+          ></iconify-icon>
+          <iconify-icon
+            class="mr-3"
+            icon="fe:user"
+            style="color: #130f40"
+            width="35"
+            height="35"
+          ></iconify-icon>
         </div>
       </div>
     </nav>
+
+    <header id="header_container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="title_welcome">Bem-vindo Foodies</h4>
+          <h1 class="title_different_tastes">
+            Diferentes Especiarias Para Diferentes Gostos 😋
+          </h1>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            adipisci nulla accusantium, hic voluptate quos.
+          </p>
+          <button class="button_order_now btn pt-2 pb-2 pl-3 pr-3">
+            Peça Agora
+          </button>
+        </div>
+        <div class="col-md-6 d-flex">
+          <img
+            class="img-fluid justify-content-center"
+            src="images/home-img.png"
+            alt=""
+          />
+          <img
+            class="image_overlay"
+            src="images/home-parallax-img.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!--* LINK BOOTSTRAP -->
