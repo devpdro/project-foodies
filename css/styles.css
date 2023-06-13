@@ -3,16 +3,22 @@
 
 
 /* ! CONTAINER */
+* {
+    font-family: "Poppins", cursive;
+}
+body {
+    scroll-behavior: smooth;
+}
 
 #container_width {
     max-width: 1280px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /*! BARRA DE NAVEGAÇÃO/NAVBAR */
 
 .navbar_logo {
-    font-family: "Poppins", cursive;
     font-weight: 900;
     color: #130f40;
     font-size: 2rem;
@@ -20,7 +26,6 @@
 }
 
 .navbar_menu {
-    font-family: "Poppins", cursive;
     font-weight: 800;
     font-size: 1.2rem;
     margin-top: 0.7rem;
@@ -30,6 +35,7 @@
 
 #header_container {
     margin-top: 9rem;
+    margin-bottom: 5rem;
 }
 
 .title_welcome {
@@ -40,12 +46,13 @@
 .title_different_tastes {
     margin-bottom: 0.8rem;
     color: #130f40;
+    
 }
 
 .button_order_now {
     margin-top: 0.4rem;
     background-color: #27ae60;
-    color: white;
+    color: #fff;
 }
 
 .image_overlay {
@@ -53,6 +60,38 @@
     overflow: hidden;
     top: -230px;
     left: -400px;
-    height: 160%!important;
+    height: 160%;
 }
+
+/*! SECTION COMIDAS/SECTION FOODS */ 
+
+#section_container {
+    margin-bottom: 9rem;
+}
+
+.foods {
+    background-color: #6666663d;
+    width: 210px;
+    height: 170px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.foods-margin-left {
+    margin-left: 1rem;
+}
+
+.image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-foods {
+    color: #130f40;
+    padding-top: 0.5rem;
+    font-weight: 700;
+}
+
 
