@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.navbar_logo {
+    font-family: "Poppins", cursive;
+    font-weight: 900;
+    color: #304880;
+    font-size: 2rem;
+    margin-left: -1.2rem; 
+}
+
+.navbar_menu {
+    font-family: "Poppins", cursive;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 0.7rem
+}
