@@ -97,7 +97,8 @@ body {
 /*! SECTION SOBRE/SECTION ABOUT */ 
 
 #about_container {
-    margin-bottom: 9rem;
+    margin-bottom: 8rem;
+    background-color: #f7f7f7;
 }
 
 .box_container_benefits {
@@ -118,11 +119,39 @@ body {
     padding: 1.1rem 0;
     font-weight: 700;
     font-size: 1.2rem;
-    box-shadow: 2px 2px 12px #00000038;
+    box-shadow: 2px 2px 12px #0000001e;
 }
 
 .icon_about {
     margin-right: 1.1rem;
     padding-top: 1rem;
     padding-bottom: 1.1rem;
+}
+
+/*! SECTION PRATOS ESPECIAIS/Special dishes */ 
+
+.div_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.box_special_dishes {
+    margin-top: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    width: 310px;
+    height: auto;
+    border: 1px solid red;
+    flex-direction: column;
+    text-align: center;
+}
+
+.heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 2px;
+    padding-right: 5px;
 }
