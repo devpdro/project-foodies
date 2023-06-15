@@ -155,3 +155,16 @@ body {
     padding-top: 2px;
     padding-right: 5px;
 }
+
+/*! SECTION ANUNCIOS/section ads */ 
+
+.ads_container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.ads_box_container {
+    width: 100%;
+}   

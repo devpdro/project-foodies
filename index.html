@@ -18,73 +18,75 @@
     />
   </head>
   <body id="container_width">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <iconify-icon
-          icon="fe:cutlery"
-          style="color: #27ae60"
-          width="40"
-          height="45"
-        ></iconify-icon>
-      </a>
-      <a class="navbar_logo">Food</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto ml-auto navbar_menu">
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">Popular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">Order</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-2" href="#">Blogs</a>
-          </li>
-        </ul>
-        <div class="navbar-icons mt-3">
+    <aside>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
           <iconify-icon
-            class="mr-3"
-            icon="fe:search"
-            style="color: #130f40"
-            width="35"
-            height="35"
+            icon="fe:cutlery"
+            style="color: #27ae60"
+            width="40"
+            height="45"
           ></iconify-icon>
-          <iconify-icon
-            class="mr-3"
-            icon="fe:remove-cart"
-            style="color: #130f40"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <iconify-icon
-            class="mr-3"
-            icon="fe:user"
-            style="color: #130f40"
-            width="35"
-            height="35"
-          ></iconify-icon>
+        </a>
+        <a class="navbar_logo">Food</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto ml-auto navbar_menu">
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#">Blogs</a>
+            </li>
+          </ul>
+          <div class="navbar-icons mt-3">
+            <iconify-icon
+              class="mr-3"
+              icon="fe:search"
+              style="color: #130f40"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <iconify-icon
+              class="mr-3"
+              icon="fe:remove-cart"
+              style="color: #130f40"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <iconify-icon
+              class="mr-3"
+              icon="fe:user"
+              style="color: #130f40"
+              width="35"
+              height="35"
+            ></iconify-icon>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </aside>
 
     <header id="header_container">
       <div class="row">
@@ -116,7 +118,7 @@
       </div>
     </header>
 
-    <section id="foods_container">
+    <aside id="foods_container">
       <div class="d-flex">
         <div class="foods image_container">
           <img src="images/cat-1.png" alt="" />
@@ -143,9 +145,9 @@
           <h4 class="text-center title-foods">Café</h4>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <section id="about_container">
+    <main id="about_container">
       <div class="row">
         <div class="col-md-6">
           <img class="img-fluid" src="images/about-img.png" alt="" />
@@ -178,7 +180,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <section>
       <h3 class="text-center">Comida popular</h3>
@@ -291,6 +293,27 @@
       </div>
     </section>
 
+    <section>
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-fluid" src="images/row-banner.png" alt="">
+        </div>
+      </div>
+
+      <div class="ads_container">
+        <div>
+          <img class="ads_box_container" src="images/banner-1.png" alt="">
+        </div>
+        <div>
+          <img class="ads_box_container" src="images/banner-2.png" alt="">
+        </div>
+        <div>
+          <img class="ads_box_container" src="images/banner-3.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--* LINK ICONIFY -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!--* LINK BOOTSTRAP -->
     <script
