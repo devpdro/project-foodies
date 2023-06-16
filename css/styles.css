@@ -229,9 +229,27 @@ body {
 
 .delivery_box_father_container {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
 .delivery_box_container {
-    width: 420px;
-    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    border: 1px solid  red;
+    align-items: center;
+}
+
+/*! SECTION ENTREGA/SECTION DELIVERY */ 
+
+.home_delivery_container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 320px;
+    flex-wrap: wrap;
 }
