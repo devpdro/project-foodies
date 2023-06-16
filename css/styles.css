@@ -220,3 +220,18 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/*! SECTION ENTREGA/SECTION DELIVERY */ 
+
+#delivery_container {
+    margin-bottom: 8rem;
+}
+
+.delivery_box_father_container {
+    display: flex;
+}
+
+.delivery_box_container {
+    width: 420px;
+    justify-content: center;
+}
