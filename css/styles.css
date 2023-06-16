@@ -158,6 +158,13 @@ body {
 
 /*! SECTION ANUNCIOS/section ads */ 
 
+.position_absolute_ads_header {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
 .ads_container {
     display: flex;
     justify-content: space-between;
@@ -165,6 +172,20 @@ body {
 }
 
 
-.ads_box_container {
-    width: 100%;
+.ads_position_text {
+    position: absolute;   
+    top: 20%;
+    color: #fff;
+    border: 1px solid red;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }   
+
+.ads_position_text_center {
+    position: absolute;   
+    top: 20%;
+    color: #000;
+    border: 1px solid red;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
