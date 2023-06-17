@@ -36,8 +36,8 @@ body {
 /** CABEÇALHO/HEADER */ 
 
 #header_container {
-    margin-top: 9rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 7.5rem;
 }
 
 .title_welcome {
@@ -111,7 +111,7 @@ body {
       }
 }
 
-/*! SECTION COMIDAS/SECTION FOODS */ 
+/** SECTION COMIDAS/SECTION FOODS */ 
 
 #foods_container {
     margin-bottom: 9rem;
@@ -119,10 +119,18 @@ body {
 
 .foods {
     background-color: #6666663d;
+    color: #130f40;
     width: 210px;
     height: 170px;
+    border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 15px;
+}
+
+.foods:hover {
+    background-color: #27ae60;
+    transition: all 0.4s ease;
+    color: #fff;
 }
 
 .foods-margin-left {
@@ -137,10 +145,11 @@ body {
 }
 
 .title-foods {
-    color: #130f40;
     padding-top: 0.5rem;
     font-weight: 700;
 }
+
+
 
 /*! SECTION SOBRE/SECTION ABOUT */ 
 
