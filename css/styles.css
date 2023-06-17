@@ -511,6 +511,11 @@ body {
     padding: 7px;
 }
 
+.button_blog:hover {
+    background-color: #130f40;
+    transition: all 0.5s ease;
+}
+
 .tag {
     align-items: center;
     padding-top: 10px;
@@ -522,7 +527,7 @@ body {
 /** SEÇÃO NEWSLETTER */ 
 
 #newsletter_container {
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 }
 
 .box_form {
@@ -536,12 +541,19 @@ body {
     background-color: #27ae60;
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.7rem 1.4rem;
+    padding: 0.9rem 1.4rem;
     font-weight: 400;
     border: 1px solid transparent;
     margin-bottom: 0.6rem;
     width: 12rem;
     border-radius: 0 10px 10px 0;
+}
+
+.btn_form:hover {
+    background-color: #130f40;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .title_form_newsletter {
@@ -551,14 +563,38 @@ body {
     margin-bottom: 1rem;
 }
 
-/*! SECTION RODAPÉ/SECTION RODAPÉ */
+/** SEÇÃO RODAPÉ */
+
+#footer_container {
+    margin-bottom: 8rem;
+}
 
 .menu_container {
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 300px;
+    height: 20rem;
     width: 100%;
- 
+}
+
+.menu_box {
+    display: flex;
+    height: 15rem;
+    flex-direction: column;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+    cursor: pointer;
+}
+
+.animacao_mouse {
+    transition: transform 0.3s ease;
+}
+
+.animacao_mouse:hover {
+    transform: translateX(10px);
 }
