@@ -250,6 +250,39 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
-    height: 320px;
+    height: 340px;
     flex-wrap: wrap;
+}
+
+/*! SECTION BLOGS/SECTION BLOGS */ 
+
+#blogs_container {
+    margin-bottom: 8rem;
+}
+
+.blogs_box_father_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blogs_box_container {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    width: 90%;
+    height: 400px;
+
+}
+
+.img_blogs {
+    height: 270px;
+    width: auto;
+}
+
+/*! SECTION NEWSLETTER/SECTION NEWSLETTER */ 
+
+#newsletter_container {
+    margin-bottom: 8rem;
 }
