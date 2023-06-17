@@ -2,12 +2,14 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Food - peça já a sua comida</title>
 
     <!--* LINK CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/navBar.css" />
 
     <!--* LINK BOOTSTRAP -->
     <link
@@ -18,80 +20,70 @@
     />
   </head>
   <body id="container_width">
-    <aside>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <iconify-icon
-            icon="fe:cutlery"
-            style="color: #27ae60"
-            width="40"
-            height="45"
-          ></iconify-icon>
-        </a>
-        <a class="navbar_logo">Food</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto ml-auto navbar_menu">
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Home</a>
+    <header>
+      <div class="header-left">
+        <iconify-icon
+          icon="fe:cutlery"
+          style="color: #27ae60"
+          width="45"
+          height="45"
+        ></iconify-icon>
+        <span class="title_logo">Foodies</span>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="#header_container" class="link_navigation">Início</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">About</a>
+            <li>
+              <a href="#about_container" class="link_navigation">Sobre</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Popular</a>
+            <li>
+              <a href="#special_scroll_id" class="link_navigation">Popular</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Menu</a>
+            <li>
+              <a href="#menu_container" class="link_navigation">Cardápio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Order</a>
+            <li>
+              <a href="#delivery_container" class="link_navigation">Entrega</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mr-2" href="#">Blogs</a>
+            <li>
+              <a href="#blogs_container" class="link_navigation">Blogs</a>
             </li>
           </ul>
-          <div class="navbar-icons mt-3">
-            <iconify-icon
-              class="mr-3"
-              icon="fe:search"
-              style="color: #130f40"
-              width="35"
-              height="35"
-            ></iconify-icon>
-            <iconify-icon
-              class="mr-3"
-              icon="fe:remove-cart"
-              style="color: #130f40"
-              width="35"
-              height="35"
-            ></iconify-icon>
-            <iconify-icon
-              class="mr-3"
-              icon="fe:user"
-              style="color: #130f40"
-              width="35"
-              height="35"
-            ></iconify-icon>
-          </div>
+        </nav>
+        <iconify-icon
+          class="icon_style"
+          icon="material-symbols:search"
+          width="40"
+          height="40"
+        ></iconify-icon>
+        <iconify-icon
+          class="icon_style"
+          icon="material-symbols:shopping-cart-rounded"
+          width="40"
+          height="40"
+        ></iconify-icon>
+        <iconify-icon
+          class="icon_style"
+          icon="material-symbols:account-circle"
+          width="40"
+          height="40"
+        ></iconify-icon>
+      </div>
+      <div class="header-right">
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-      </nav>
-    </aside>
+      </div>
+    </header>
 
-    <header id="header_container">
+    <section id="header_container">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="title_welcome">Bem-vindo Foodies</h4>
+          <h4 class="title_welcome">Bem-vindo ao Foodies</h4>
           <h1 class="title_different_tastes">
             Diferentes Especiarias Para Diferentes Gostos 😋
           </h1>
@@ -116,7 +108,7 @@
           />
         </div>
       </div>
-    </header>
+    </section>
 
     <aside id="foods_container">
       <div class="d-flex">
@@ -185,7 +177,7 @@
       </div>
     </main>
 
-    <section>
+    <section id="special_scroll_id">
       <h3 class="text-center title_popular_food">Comida popular</h3>
       <h1 class="text-center title_special_dishes">Nossos Pratos Especiais</h1>
       <div class="div_container">
@@ -759,7 +751,9 @@
             ></iconify-icon
             >Pizza
           </div>
-          <h1 class="title_blog">Delícias à Mesa: O Blog que Celebra a Gastronomia.</h1>
+          <h1 class="title_blog">
+            Delícias à Mesa: O Blog que Celebra a Gastronomia.
+          </h1>
           <p class="subtitle_blog pl-3">
             Uma explosão de sabores e sorrisos contagiantes no restaurante hoje.
             Clientes encantados saborearam pratos extraordinários, deixando seus
@@ -847,7 +841,11 @@
       <form action="">
         <div class="form-group">
           <div class="box_form">
-            <input type="text" class="form-control border-0 form_button" placeholder="Digite seu email" />
+            <input
+              type="text"
+              class="form-control border-0 form_button"
+              placeholder="Digite seu email"
+            />
             <button class="btn_form" type="button">Inscrever-se</button>
           </div>
 
@@ -861,50 +859,256 @@
     <footer id="footer_container">
       <div class="menu_container">
         <div class="menu_box">
-          
-            <h3 class="title_blog">Nosso Cardápio</h3>
-            <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Hambúrguer</span>
-            <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Pizza</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Bebidas</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Frango</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Café</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> E mais...</span>
-          
+          <h3 class="title_blog">Nosso Cardápio</h3>
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Hambúrguer</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Pizza</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Bebidas</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Frango</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Café</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            E mais...</span
+          >
         </div>
         <div class="menu_box">
           <h3 class="title_blog">Links Rápidos</h3>
-          <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Home</span>
-            <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> About</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Popular</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Menu</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Order</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Blogs</span>
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Início</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Sobre</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Popular</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Cardápio</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Entrega</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Blogs</span
+          >
         </div>
 
         <div class="menu_box">
           <h3 class="title_blog">Links extras</h3>
-          <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Meu Pedido</span>
-            <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Minha Conta</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Meu Favorito</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Termos de Uso</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Política de Privacidade</span>
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Meu Pedido</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Minha Conta</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Meu Favorito</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Termos de Uso</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Política de Privacidade</span
+          >
         </div>
 
         <div class="menu_box">
           <h3 class="title_blog">Horário de Funcionamento</h3>
-          <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Segunda-Feira: 7h00 às 22h00</span>
-            <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Terça-Feira: 7h00 às 22h00</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Quarta-Feira: 7h00 às 22h00</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Quinta-Feira: 7h00 às 22h00</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Sexta-Feira: 7h00 às 22h00</span>
-           <span class="arrow animacao_mouse"><iconify-icon class="" icon="fe:paper-plane" style="color: #27ae60;" width="20" height="20"></iconify-icon> Sábado e Domingo: Fechado</span>
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Segunda-Feira: 7h00 às 22h00</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Terça-Feira: 7h00 às 22h00</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Quarta-Feira: 7h00 às 22h00</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Quinta-Feira: 7h00 às 22h00</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Sexta-Feira: 7h00 às 22h00</span
+          >
+          <span class="arrow animacao_mouse"
+            ><iconify-icon
+              class=""
+              icon="fe:paper-plane"
+              style="color: #27ae60"
+              width="20"
+              height="20"
+            ></iconify-icon>
+            Sábado e Domingo: Fechado</span
+          >
         </div>
 
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </footer>
+
+    <!--* LINK JAVASCRIPT -->
+    <script src="navBar.js"></script>
 
     <!--* LINK ICONIFY -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

@@ -8,7 +8,7 @@
     font-family: "Poppins", cursive;
 }
 
-body {
+body, html {
     scroll-behavior: smooth;
 }
 
@@ -16,21 +16,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     overflow-x: hidden;
-}
-
-/** BARRA DE NAVEGAÇÃO */
-
-.navbar_logo {
-    font-weight: 900;
-    color: #130f40;
-    font-size: 2rem;
-    margin-left: -1.2rem; 
-}
-
-.navbar_menu {
-    font-weight: 800;
-    font-size: 1.2rem;
-    margin-top: 0.7rem;
 }
 
 /** CABEÇALHO */ 
@@ -65,10 +50,9 @@ body {
 
 .image_overlay {
     position: absolute;
-    overflow: hidden;
-    top: -230px;
-    left: -400px;
-    height: 160%;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .image_overlay:hover {
@@ -197,6 +181,10 @@ body {
 }
 
 /** SEÇÃO PRATOS ESPECIAIS*/ 
+
+#special_scroll_id {
+    margin-bottom: Entrega;
+}
 
 #special_dishes_container {
     margin-bottom: 2rem;

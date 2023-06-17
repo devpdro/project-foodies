@@ -1,0 +1,117 @@
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #fff;
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left nav {
+    margin: 0 auto;
+    margin-top: 1.4rem;
+}
+header .header-left nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.title_logo {
+  font-size: 2rem;
+  color: #130f40;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.link_navigation {
+  cursor: pointer;
+  display: block;
+  color: #808080;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+.link_navigation:hover {
+  list-style: none;
+  text-decoration: none;
+}
+
+.icon_style {
+  margin-top: 0.5rem;
+  padding: 10px 10px 10px 10px;
+  color: #130f40;
+  cursor: pointer;
+}
+
+.icon_style:hover {
+  transition: all 0.3s;
+  background-color: #27ae60;
+  border-radius: 5px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+    color: #27ae60;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: black;
+}
+
+@media only screen and (max-width: 750px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #0b2239;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}
