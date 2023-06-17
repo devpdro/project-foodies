@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
-/* ! CONTAINER */
+/** CONTAINER */
+
 * {
     font-family: "Poppins", cursive;
 }
+
 body {
     scroll-behavior: smooth;
 }
@@ -16,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-/*! BARRA DE NAVEGAÇÃO/NAVBAR */
+/** BARRA DE NAVEGAÇÃO/NAVBAR */
 
 .navbar_logo {
     font-weight: 900;
@@ -31,7 +33,7 @@ body {
     margin-top: 0.7rem;
 }
 
-/*! CABEÇALHO/HEADER */ 
+/** CABEÇALHO/HEADER */ 
 
 #header_container {
     margin-top: 9rem;
@@ -55,12 +57,58 @@ body {
     color: #fff;
 }
 
+.button_order_now:hover {
+    background-color: #130f40;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
 .image_overlay {
     position: absolute;
     overflow: hidden;
     top: -230px;
     left: -400px;
     height: 160%;
+}
+
+.image_overlay:hover {
+     animation: swing 2s infinite;
+}
+
+@keyframes swing {
+     0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      10% {
+        transform: translateX(-5px) rotate(-4deg);
+      }
+      20% {
+        transform: translateX(5px) rotate(4deg);
+      }
+      30% {
+        transform: translateX(-5px) rotate(-4deg);
+      }
+      40% {
+        transform: translateX(10px) rotate(4deg);
+      }
+      50% {
+        transform: translateX(-5px) rotate(-4deg);
+      }
+      60% {
+        transform: translateX(5px) rotate(2deg);
+      }
+      70% {
+        transform: translateX(-5px) rotate(-2deg);
+      }
+      80% {
+        transform: translateX(5px) rotate(2deg);
+      }
+      90% {
+        transform: translateX(-5px) rotate(-2deg);
+      }
+      100% {
+        transform: translateX(0) rotate(0deg);
+      }
 }
 
 /*! SECTION COMIDAS/SECTION FOODS */ 
