@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-/** BARRA DE NAVEGAÇÃO/NAVBAR */
+/** BARRA DE NAVEGAÇÃO */
 
 .navbar_logo {
     font-weight: 900;
@@ -33,7 +33,7 @@ body {
     margin-top: 0.7rem;
 }
 
-/** CABEÇALHO/HEADER */ 
+/** CABEÇALHO */ 
 
 #header_container {
     margin-top: 10rem;
@@ -59,7 +59,7 @@ body {
 
 .button_order_now:hover {
     background-color: #130f40;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     color: #fff;
 }
 
@@ -111,7 +111,7 @@ body {
       }
 }
 
-/** SECTION COMIDAS/SECTION FOODS */ 
+/** SEÇÃO DE COMIDAS */ 
 
 #foods_container {
     margin-bottom: 9rem;
@@ -149,13 +149,23 @@ body {
     font-weight: 700;
 }
 
-
-
-/*! SECTION SOBRE/SECTION ABOUT */ 
+/** SEÇÃO SOBRE */ 
 
 #about_container {
-    margin-bottom: 8rem;
+    margin-bottom: 6.5rem;
     background-color: #f7f7f7;
+}
+
+.title_box_choose_us {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.9rem;
+    padding-top: 2rem;
+    color: #27ae60;
+}
+
+.title_box_delicious_food {
+    color: #130f40;
+    font-weight: 700;
 }
 
 .box_container_benefits {
@@ -164,6 +174,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
+
 .benefits_box {
     background-color: #fff;
     color: #000;
@@ -185,11 +196,45 @@ body {
     padding-bottom: 1.1rem;
 }
 
-/*! SECTION PRATOS ESPECIAIS/Special dishes */ 
+/** SEÇÃO PRATOS ESPECIAIS*/ 
 
 #special_dishes_container {
     margin-bottom: 2rem;
 }
+
+.title_popular_food {
+    font-size: 2.1rem;
+    font-family: 'Satisfy', cursive;
+    color: #27ae60;
+}
+
+.title_special_dishes {
+    color: #130f40;
+    font-weight: 700
+}
+
+.title_food {
+    color: #130f40;
+    font-weight: 700
+}
+
+.dashed_value {
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.button_add_cart {
+    margin-top: 5px;
+    border-radius: 8px;
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.button_add_cart:hover {
+    background-color: #130f40;
+    transition: all 0.5s ease;
+}
+
 .div_container {
     display: flex;
     justify-content: center;
@@ -198,12 +243,12 @@ body {
 
 .box_special_dishes {
     margin-top: 1.2rem;
+    background-color: #dadada49;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     position: relative;
     width: 310px;
     height: auto;
-    border: 1px solid red;
     flex-direction: column;
     text-align: center;
 }
@@ -214,6 +259,16 @@ body {
     right: 0;
     padding-top: 2px;
     padding-right: 5px;
+    color: #808080;
+}
+
+.heart:hover {
+    color: #27ae60;
+    transition: all 0.5s ease;
+}
+
+.special_box_margin {
+    margin-left: 1.2rem;
 }
 
 /*! SECTION ANUNCIOS/section ads */ 
