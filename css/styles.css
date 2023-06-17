@@ -271,7 +271,7 @@ body {
     margin-left: 1.2rem;
 }
 
-/*! SECTION ANUNCIOS/section ads */ 
+/** SECTION ANUNCIOS */ 
 
 #ads_container_div {
     margin-bottom: 8rem;
@@ -279,37 +279,95 @@ body {
 
 .position_absolute_ads_header {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 20%;
     transform: translate(-50%, -50%);
+}
+
+.title_double_cheese {
+    font-size: 2.3rem;
+    font-family: 'Satisfy', cursive;
+    color: #130f40;
+}
+
+.title_burger {
+    text-transform: uppercase;
+    color: #FF0000;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #130f40;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
 }
 
 .ads_container {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .ads_position_text {
     position: absolute;   
     top: 20%;
     color: #fff;
-    border: 1px solid red;
-    left: 50%;
+    width: 80%;
+    left: 46%;
     transform: translate(-50%, -50%);
 }   
 
 .ads_position_text_center {
     position: absolute;   
     top: 20%;
+    width: 70%;
     color: #000;
-    border: 1px solid red;
+    text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/*! SECTION CARDAPIO/SECTION MENU */ 
+.subtitle_ads {
+    font-size: 1.7rem;
+    font-family: 'Satisfy', cursive;
+    color: #fff;
+}
 
+.title_ads {
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.subtitle_center {
+    color: #808080;
+    font-size: 1.7rem;
+    font-family: 'Satisfy', cursive;
+}
+
+.title_ads_sales {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #130f40;
+}
+
+.zoom_img {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.zoom_effect {
+    transition: transform 0.3s ease;
+}
+
+.zoom_effect:hover {
+    transform: scale(1.1);
+}
+
+/** SECTION CARDAPIO */ 
 
 #menu_container {
     margin-bottom: 8rem;
