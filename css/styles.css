@@ -179,7 +179,7 @@ body {
     background-color: #fff;
     color: #000;
     height: 70px;
-    width: 300px;
+    width: 18rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,7 +247,7 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     position: relative;
-    width: 310px;
+    width: 18rem;
     height: auto;
     flex-direction: column;
     text-align: center;
@@ -259,6 +259,7 @@ body {
     right: 0;
     padding-top: 2px;
     padding-right: 5px;
+    cursor: pointer;
     color: #808080;
 }
 
@@ -274,7 +275,7 @@ body {
 /** SECTION ANUNCIOS */ 
 
 #ads_container_div {
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 }
 
 .position_absolute_ads_header {
@@ -367,94 +368,187 @@ body {
     transform: scale(1.1);
 }
 
-/** SECTION CARDAPIO */ 
+/** SEÇÃO CARDAPIO */ 
 
 #menu_container {
-    margin-bottom: 8rem;
+    margin-bottom: 7rem;
 }
 
 .menu_container_foods {
     flex-wrap: wrap;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .menu_box_foods {
    display: flex; 
+   background-color: #dadada49;
    align-items: center;
-   width: 420px;
+   width: 23rem;
+   color: #130f40;
+   padding: 8px;
+   border-radius: 5px;
 }
 
-.menu_box_foods1 {
-    display: flex;
-    flex-direction: column;
+.menu_box_foods:hover {
+    background-color: #130f40;
+    transition: all 0.4s ease;
+    color: #fff;
 }
 
-/*! SECTION ENTREGA/SECTION DELIVERY */ 
+.menu_box_foods_margin {
+    margin-left: 1rem;
+}
+
+.title_foods_box {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.style_money {
+    color: #27ae60;
+    font-size: 1.3rem;
+}
+
+/** SEÇÃO ENTREGA */ 
 
 #delivery_container {
-    margin-bottom: 8rem;
+    margin-bottom: 5.4rem;
 }
 
 .delivery_box_father_container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
     height: 100%;
 }
 
 .delivery_box_container {
-    max-width: 100%;
-    flex-direction: column;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     text-align: center;
+    border-radius: 10px;
+    padding: 2px 40px;
+    background-color: #dadada13;
     height: auto;
-    border: 1px solid  red;
     align-items: center;
 }
 
-/*! SECTION ENTREGA/SECTION DELIVERY */ 
-
 .home_delivery_container {
     margin-top: 3rem;
+    align-items: center;
     display: flex;
+    justify-content: center;
+    padding: 10px 15px;
     flex-direction: column;
-    border: 1px solid red;
     height: 340px;
     flex-wrap: wrap;
 }
 
-/*! SECTION BLOGS/SECTION BLOGS */ 
+.title_form {
+    color: #130f40;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/** SEÇÃO BLOGS */ 
 
 #blogs_container {
-    margin-bottom: 8rem;
+    margin-bottom: 3.7rem;
 }
 
 .blogs_box_father_container {
+    margin-top: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .blogs_box_container {
-    align-items: center;
     flex-direction: column;
-    text-align: center;
     display: flex;
-    width: 90%;
-    height: 400px;
+    height: 570px;
+    width: 23rem;
+    align-items: flex-start;
+    border-radius: 0 0 10px 10px;
+    background-color: #dadada25;
+}
 
+.blogs_box_margin {
+    margin-left: 2rem;
 }
 
 .img_blogs {
     height: 270px;
-    width: auto;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
 }
 
-/*! SECTION NEWSLETTER/SECTION NEWSLETTER */ 
+.title_blog {
+    text-align: left;
+    color: #130f40;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+
+.subtitle_blog {
+    color: #808080;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.button_blog {
+    margin-left: 1rem;
+    background-color: #27ae60;
+    color: #fff;
+    width: auto;
+    font-size: 1.2rem;
+    padding: 7px;
+}
+
+.tag {
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+/** SEÇÃO NEWSLETTER */ 
 
 #newsletter_container {
     margin-bottom: 8rem;
+}
+
+.box_form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 50%;
+}
+
+.btn_form {
+    background-color: #27ae60;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.7rem 1.4rem;
+    font-weight: 400;
+    border: 1px solid transparent;
+    margin-bottom: 0.6rem;
+    width: 12rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.title_form_newsletter {
+    color: #130f40;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 
 /*! SECTION RODAPÉ/SECTION RODAPÉ */
@@ -466,5 +560,5 @@ body {
     flex-wrap: wrap;
     height: 300px;
     width: 100%;
-    border: 1px solid red;
+ 
 }
