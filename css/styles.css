@@ -286,3 +286,15 @@ body {
 #newsletter_container {
     margin-bottom: 8rem;
 }
+
+/*! SECTION RODAPÉ/SECTION RODAPÉ */
+
+.menu_container {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    border: 1px solid red;
+}
