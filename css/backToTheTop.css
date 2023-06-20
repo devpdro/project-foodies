@@ -1,0 +1,12 @@
+.top {
+    opacity: 1;
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    transition: .4s all;
+}
+
+.show-button .top {
+    right: 50px;
+    transition: .4s all;
+}
