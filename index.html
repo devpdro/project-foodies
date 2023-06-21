@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/backToTheTop.css" />
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/shopping.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
     <!--* LINK BOOTSTRAP -->
     <link
@@ -20,6 +21,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   </head>
   <body id="container_width">
     <header class="active" id="header-id-container">
@@ -121,7 +123,9 @@
       <div class="pt-3 pb-3 border-left border-right border-top">
         <h1 class="title_shopping">Seus produtos</h1>
       </div>
-      <div class="shopping_container border-top border-left border-right border-bottom">
+      <div
+        class="shopping_container border-top border-left border-right border-bottom"
+      >
         <div class="shopping_container_box">
           <img src="images/menu-1.png" alt="" />
           <div class="shopping_container_box_content">
@@ -134,7 +138,7 @@
         <div class="shopping_container_box">
           <img src="images/menu-2.png" alt="" />
           <div class="shopping_container_box_content">
-             <p class="title_box_shopping">Italian Stallion</p>
+            <p class="title_box_shopping">Italian Stallion</p>
             <p class="quantity">Quantidade:</p>
             <p class="price">Preço: <span class="price_color">$76,90</span></p>
           </div>
@@ -143,7 +147,7 @@
         <div class="shopping_container_box">
           <img src="images/menu-3.png" alt="" />
           <div class="shopping_container_box_content">
-             <p class="title_box_shopping">Classic Reuben</p>
+            <p class="title_box_shopping">Classic Reuben</p>
             <p class="quantity">Quantidade:</p>
             <p class="price">Preço: <span class="price_color">$18,90</span></p>
           </div>
@@ -152,7 +156,7 @@
         <div class="shopping_container_box">
           <img src="images/menu-4.png" alt="" />
           <div class="shopping_container_box_content">
-             <p class="title_box_shopping">O Club dos Sabores</p>
+            <p class="title_box_shopping">O Club dos Sabores</p>
             <p class="quantity">Quantidade:</p>
             <p class="price">Preço: <span class="price_color">$22,90</span></p>
           </div>
@@ -167,18 +171,63 @@
           </div>
         </div>
       </div>
-      <h1 class="pt-3 pb-3 title_cart border-top border-right border-left">Carrinho Total</h1>
-      <div class="shopping_cart_container border-bottom border-top border-left border-right">
-        <h4 class="subtitle_shopping_cart">Subtotal : <span class="price_color">$212,50</span></h4>
-        <h4 class="subtitle_shopping_cart">Frete : <span class="price_color">$22,90</span></h4>
-        <h4 class="subtitle_shopping_cart">Total : <span class="price_color">$235,40</span></h4>
-        <button class="w-25 button_complete_order btn pt-2 pb-2 pl-3 pr-3">Concluir o Pedido</button>
+      <h1 class="pt-3 pb-3 title_cart border-top border-right border-left">
+        Carrinho Total
+      </h1>
+      <div
+        class="shopping_cart_container border-bottom border-top border-left border-right"
+      >
+        <h4 class="subtitle_shopping_cart">
+          Subtotal : <span class="price_color">$212,50</span>
+        </h4>
+        <h4 class="subtitle_shopping_cart">
+          Frete : <span class="price_color">$22,90</span>
+        </h4>
+        <h4 class="subtitle_shopping_cart">
+          Total : <span class="price_color">$235,40</span>
+        </h4>
+        <button class="w-25 button_complete_order btn pt-2 pb-2 pl-3 pr-3">
+          Concluir o Pedido
+        </button>
       </div>
     </section>
 
     <!--* LOGIN -->
     <section id="login" class="hidden">
-      <h1>Login</h1>
+      <div
+        class="login_container border-top border-left border-bottom border-right">
+        <div>
+          <h4 class="title_login">Conecte-se Agora</h4>
+
+          <div class="input_box">
+            <form id="form" class="form-group" onsubmit="return verificarFormulario()">
+              <input
+                required maxlength="72" min="6"
+                class="input_login"
+                type="email"
+                name=""
+                id="email_login"
+                placeholder="digite seu e-mail"
+              />
+              <input
+                required maxlength="42" min="4"
+                class="input_login"
+                type="password"
+                name=""
+                id="password_login"
+                placeholder="digite sua senha"
+              />
+              <label class="checkbox_login" for="checkbox1"
+                ><input type="checkbox" name="" id="checkbox1" /> Lembrar de Mim</label
+              >
+              <input class="button_login_now btn pt-2 pb-2 pl-3 pr-3" type="submit" value="Conecte-se Agora">
+            </form>
+          </div>
+          
+          <h6 class="login_account_recovery">Esqueceu a senha? <a href="#" style="text-decoration: none;"><span class="login_account_recovery_click">Clique aqui</span></a></h6>
+          <h6 class="login_account_recovery mb-3">Não tem uma conta? <a href="#" style="text-decoration: none;"><span class="login_account_recovery_click">Criar agora</span></a></h6>
+        </div>
+      </div>
     </section>
 
     <section id="header_container">

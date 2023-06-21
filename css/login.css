@@ -1,0 +1,83 @@
+.login_container {
+    margin: 3.3rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    flex-direction: column;
+}
+
+.title_login {
+    text-align: left;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #130f40;
+    width: 100%;
+    font-weight: 700;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_login {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    margin-top: 1rem;
+    border-right: 0;
+    border-bottom: 0;
+    height: 3rem;
+    width: 25rem;
+    color: #000;
+    font-family: 700;
+    outline: none;
+    margin-left: 2rem;
+}
+
+.input_login::placeholder {
+    color: #00000071;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.checkbox_login {
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: #808080;
+}
+
+.button_login_now {
+    background-color: #27ae60;
+    color: #fff;
+    margin-top: 0.7rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 94%;
+}
+
+.button_login_now:hover {
+    background-color: #130f40;
+    transition: all 0.4s ease;
+    color: #fff;
+}
+
+.login_account_recovery {
+    color: #808080;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.login_account_recovery_click {
+    color: #27ae60;
+}
