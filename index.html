@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navBar.css" />
     <link rel="stylesheet" href="css/routes.css" />
-    <link rel="stylesheet" href="css/backToTheTop.css">
+    <link rel="stylesheet" href="css/backToTheTop.css" />
+    <link rel="stylesheet" href="css/search.css">
 
     <!--* LINK BOOTSTRAP -->
     <link
@@ -56,8 +57,8 @@
           </ul>
         </nav>
         <div class="d-flex">
-          <div id="page1" class="">
-            <a href="#search" class="link">
+          <div onclick="searchPage()" id="" class=" ">
+            <a href="#" class="">
               <iconify-icon
                 class="icon_style"
                 icon="material-symbols:search"
@@ -66,8 +67,8 @@
               ></iconify-icon>
             </a>
           </div>
-          <div id="page2" class=" ">
-            <a href="#shopping" class="link">
+          <div onclick="shoppingPage()" id="" class=" ">
+            <a href="#" class="">
               <iconify-icon
                 class="icon_style"
                 icon="material-symbols:shopping-cart-rounded"
@@ -76,8 +77,8 @@
               ></iconify-icon>
             </a>
           </div>
-          <div id="page3" class="">
-            <a href="#login" class="link">
+          <div onclick="loginPage()" id="" class="">
+            <a href="#" class="">
               <iconify-icon
                 class="icon_style"
                 icon="material-symbols:account-circle"
@@ -98,32 +99,29 @@
     </header>
 
     <!--* SEARCH -->
-    <div id="">
-      <div id="search" class="page">
-        <h1>Página 1</h1>
-        <p>Conteúdo da página 1</p>
-      </div>
-    </div>
+    <section id="search" class="hidden">
+      <form style="position: relative;" class="" action="">
+        <input class="input_search" type="search" placeholder="procure aqui" name="" id="search1">
+        <iconify-icon
+                class="icon_position"
+                icon="material-symbols:search"
+                width="40"
+                height="40"
+              ></iconify-icon>
+      </form>
+    </section>
 
     <!--* SHOPPING -->
-    <div id="">
-      <div id="shopping" class="page">
-        <h1>Página 2</h1>
-        <p>Conteúdo da página 2</p>
-        <div>sdasdadada</div>
-      </div>
-    </div>
+    <section id="shopping" class="hidden">
+      <h1>shopping</h1>
+    </section>
 
     <!--* LOGIN -->
-    <div id="">
-      <div id="login" class="page">
-        <h1>Página 3</h1>
-        <p>Conteúdo da página 2</p>
-        <div>sdasdadada</div>
-      </div>
-    </div>
+    <section id="login" class="hidden">
+      <h1>Login</h1>
+    </section>
 
-    <section class="page active" id="header_container">
+    <section id="header_container">
       <div class="row">
         <div class="col-md-6">
           <h4 class="title_welcome">Bem-vindo ao Foodies</h4>
@@ -153,7 +151,7 @@
       </div>
     </section>
 
-    <aside class="page active" id="foods_container">
+    <aside id="foods_container">
       <div class="d-flex">
         <div class="foods image_container">
           <img src="images/cat-1.png" alt="" />
@@ -182,7 +180,7 @@
       </div>
     </aside>
 
-    <main class="page active" id="about_container">
+    <main id="about_container">
       <div class="row">
         <div class="col-md-6">
           <img class="img-fluid pt-2" src="images/about-img.png" alt="" />
@@ -220,7 +218,7 @@
       </div>
     </main>
 
-    <section class="page active" id="special_scroll_id">
+    <section id="special_scroll_id">
       <h3 class="text-center title_popular_food">Comida popular</h3>
       <h1 class="text-center title_special_dishes">Nossos Pratos Especiais</h1>
       <div class="div_container">
@@ -395,7 +393,7 @@
       </div>
     </section>
 
-    <section class="page active" id="special_dishes_container">
+    <section id="special_dishes_container">
       <div class="div_container">
         <div class="box_special_dishes">
           <iconify-icon
@@ -571,7 +569,7 @@
       </div>
     </section>
 
-    <section class="page active" id="ads_container_div">
+    <section id="ads_container_div">
       <div class="row">
         <div class="col-md-12">
           <img class="img-fluid" src="images/row-banner.png" alt="" />
@@ -612,7 +610,7 @@
       </div>
     </section>
 
-    <section class="page active" id="menu_container">
+    <section id="menu_container">
       <h4 class="text-center title_popular_food">Nosso Cardápio</h4>
       <h1 class="text-center title_special_dishes">Nossos melhores pratos</h1>
       <div class="menu_container_foods mt-4">
@@ -666,7 +664,7 @@
       </div>
     </section>
 
-    <section class="page active" id="delivery_container">
+    <section id="delivery_container">
       <h4 class="text-center title_popular_food">Peça agora</h4>
       <h1 class="text-center title_special_dishes">Entrega rápida em casa</h1>
       <div class="delivery_box_father_container">
@@ -763,7 +761,7 @@
       </form>
     </section>
 
-    <section class="page active" id="blogs_container">
+    <section id="blogs_container">
       <h4 class="text-center title_popular_food">Nossos Blogs</h4>
       <h1 class="text-center title_special_dishes">Nossas Histórias Diárias</h1>
       <div class="blogs_box_father_container">
@@ -879,7 +877,7 @@
       </div>
     </section>
 
-    <section class="page active" id="newsletter_container">
+    <section id="newsletter_container">
       <h1 class="text-center title_form_newsletter">Newsletter</h1>
       <form action="">
         <div class="form-group">
@@ -899,7 +897,7 @@
       </form>
     </section>
 
-    <footer class="page active" id="footer_container">
+    <footer id="footer_container">
       <div class="menu_container">
         <div class="menu_box">
           <h3 class="title_blog">Nosso Cardápio</h3>
@@ -1149,7 +1147,13 @@
         <div dataScroll="slow" dataAnima="scroll">
           <a href="#inicio">
             <div class="top">
-              <iconify-icon class="" icon="ic:baseline-keyboard-arrow-up" style="color: #27ae60;" width="58" height="58"></iconify-icon>
+              <iconify-icon
+                class=""
+                icon="ic:baseline-keyboard-arrow-up"
+                style="color: #27ae60"
+                width="58"
+                height="58"
+              ></iconify-icon>
             </div>
           </a>
         </div>
@@ -1157,9 +1161,9 @@
     </footer>
 
     <!--* LINK JAVASCRIPT -->
-    <script src="../js/navBar.js"></script>
-    <script src="../js/routes.js"></script>
-    <script src="../js/backToTheTop.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/backToTheTop.js"></script>
 
     <!--* LINK ICONIFY -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

@@ -1,0 +1,29 @@
+.input_search {
+    margin-top: 3.3em;
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    border-width: 3px;
+    border-color: rgb(2, 2, 22);
+    border-radius: 4px; 
+    border-top-right-radius: 0;
+    outline: none;
+}
+
+.icon_position {
+    padding-bottom: 0.7rem;
+    color: #130f40;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icon_position:hover {
+    color: #27ae60;
+    transition: all 0.4s ease;
+}
+
