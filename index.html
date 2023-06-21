@@ -9,10 +9,9 @@
 
     <!--* LINK CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/navBar.css" />
-    <link rel="stylesheet" href="css/routes.css" />
     <link rel="stylesheet" href="css/backToTheTop.css" />
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/shopping.css" />
 
     <!--* LINK BOOTSTRAP -->
     <link
@@ -100,20 +99,81 @@
 
     <!--* SEARCH -->
     <section id="search" class="hidden">
-      <form style="position: relative;" class="" action="">
-        <input class="input_search" type="search" placeholder="procure aqui" name="" id="search1">
+      <form style="position: relative" class="" action="">
+        <input
+          class="input_search"
+          type="search"
+          placeholder="procure aqui"
+          name=""
+          id="search1"
+        />
         <iconify-icon
-                class="icon_position"
-                icon="material-symbols:search"
-                width="40"
-                height="40"
-              ></iconify-icon>
+          class="icon_position"
+          icon="material-symbols:search"
+          width="40"
+          height="40"
+        ></iconify-icon>
       </form>
     </section>
 
     <!--* SHOPPING -->
     <section id="shopping" class="hidden">
-      <h1>shopping</h1>
+      <div class="pt-3 pb-3 border-left border-right border-top">
+        <h1 class="title_shopping">Seus produtos</h1>
+      </div>
+      <div class="shopping_container border-top border-left border-right border-bottom">
+        <div class="shopping_container_box">
+          <img src="images/menu-1.png" alt="" />
+          <div class="shopping_container_box_content">
+            <p class="title_box_shopping">Gourmet Fire</p>
+            <p class="quantity">Quantidade:</p>
+            <p class="price">Preço: <span class="price_color">$28,90</span></p>
+          </div>
+        </div>
+
+        <div class="shopping_container_box">
+          <img src="images/menu-2.png" alt="" />
+          <div class="shopping_container_box_content">
+             <p class="title_box_shopping">Italian Stallion</p>
+            <p class="quantity">Quantidade:</p>
+            <p class="price">Preço: <span class="price_color">$76,90</span></p>
+          </div>
+        </div>
+
+        <div class="shopping_container_box">
+          <img src="images/menu-3.png" alt="" />
+          <div class="shopping_container_box_content">
+             <p class="title_box_shopping">Classic Reuben</p>
+            <p class="quantity">Quantidade:</p>
+            <p class="price">Preço: <span class="price_color">$18,90</span></p>
+          </div>
+        </div>
+
+        <div class="shopping_container_box">
+          <img src="images/menu-4.png" alt="" />
+          <div class="shopping_container_box_content">
+             <p class="title_box_shopping">O Club dos Sabores</p>
+            <p class="quantity">Quantidade:</p>
+            <p class="price">Preço: <span class="price_color">$22,90</span></p>
+          </div>
+        </div>
+
+        <div class="shopping_container_box">
+          <img src="images/menu-6.png" alt="" />
+          <div class="shopping_container_box_content">
+            <p class="title_box_shopping">Garden Delight</p>
+            <p class="quantity">Quantidade:</p>
+            <p class="price">Preço: <span class="price_color">$64,90</span></p>
+          </div>
+        </div>
+      </div>
+      <h1 class="pt-3 pb-3 title_cart border-top border-right border-left">Carrinho Total</h1>
+      <div class="shopping_cart_container border-bottom border-top border-left border-right">
+        <h4 class="subtitle_shopping_cart">Subtotal : <span class="price_color">$212,50</span></h4>
+        <h4 class="subtitle_shopping_cart">Frete : <span class="price_color">$22,90</span></h4>
+        <h4 class="subtitle_shopping_cart">Total : <span class="price_color">$235,40</span></h4>
+        <button class="w-25 button_complete_order btn pt-2 pb-2 pl-3 pr-3">Concluir o Pedido</button>
+      </div>
     </section>
 
     <!--* LOGIN -->
