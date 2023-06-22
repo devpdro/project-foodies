@@ -17,12 +17,26 @@
 .shopping_container_box {
     display: flex;
     align-items: center;
+    position: relative;
     padding: 10px;
-    width: 390px; 
+    width: 24rem; 
     margin-top: 3.7rem;
     margin-left: 1rem;
     margin-right: 1rem;
     background-color: #80808007;
+}
+
+.icon_position_box_shopping {
+    position: absolute;
+    top: 0;
+    color: #130f40;
+    cursor: pointer;
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+.icon_position_box_shopping:hover {
+    color: #27ae60;
 }
 
 .shopping_container_box_content {
@@ -40,6 +54,12 @@
     font-size: 1.2rem;
     color: #808080;
     
+}
+
+.input_choose_quantity {
+    display: inline;
+    width: 40px;
+    outline: none;
 }
 
 .price {

@@ -15,7 +15,7 @@ function checkForm() {
     Swal.fire({
       icon: "error",
       title: "Erro!",
-      text: "Por favor, preencha todos os campos.",
+      text: "Por favor, preencha os campos obrigatórios.",
     });
     return false;
   }

@@ -8,7 +8,7 @@ function sendToAnotherPage() {
       title: "Erro!",
       text: "Por favor, preencha todos os campos antes de prosseguir.",
     });
-  } else if (emailLogin > 1 && passwordLogin > 1) {
-    window.location.href = "http://127.0.0.1:5500/projeto-food/index.html";
+  } else {
+    window.location.href = "http://127.0.0.1:5500/projeto-food/index.html?#";
   } 
 }

@@ -21,7 +21,6 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
   </head>
   <body id="container_width">
     <header class="active" id="header-id-container">
@@ -88,6 +87,16 @@
               ></iconify-icon>
             </a>
           </div>
+          <div onclick="resetPage()">
+            <a href="#">
+              <iconify-icon
+                class="icon_style"
+                icon="material-symbols:home-outline"
+                width="40"
+                height="40"
+              ></iconify-icon>
+            </a>
+          </div>
         </div>
       </div>
       <div class="header-right">
@@ -127,46 +136,51 @@
         class="shopping_container border-top border-left border-right border-bottom"
       >
         <div class="shopping_container_box">
+          <iconify-icon class="icon_position_box_shopping" icon="mdi:close" width="27" height="27"></iconify-icon>
           <img src="images/menu-1.png" alt="" />
           <div class="shopping_container_box_content">
             <p class="title_box_shopping">Gourmet Fire</p>
-            <p class="quantity">Quantidade:</p>
+            <p class="quantity">Quantidade: <input value="1" class="border-0 input_choose_quantity" type="number" name="" id=""></p>
             <p class="price">Preço: <span class="price_color">$28,90</span></p>
           </div>
         </div>
 
         <div class="shopping_container_box">
+          <iconify-icon class="icon_position_box_shopping" icon="mdi:close" width="27" height="27"></iconify-icon>
           <img src="images/menu-2.png" alt="" />
           <div class="shopping_container_box_content">
             <p class="title_box_shopping">Italian Stallion</p>
-            <p class="quantity">Quantidade:</p>
+            <p class="quantity">Quantidade: <input value="1" class="border-0 input_choose_quantity" type="number" name="" id=""></p>
             <p class="price">Preço: <span class="price_color">$76,90</span></p>
           </div>
         </div>
 
         <div class="shopping_container_box">
+          <iconify-icon class="icon_position_box_shopping" icon="mdi:close" width="27" height="27"></iconify-icon>
           <img src="images/menu-3.png" alt="" />
           <div class="shopping_container_box_content">
             <p class="title_box_shopping">Classic Reuben</p>
-            <p class="quantity">Quantidade:</p>
+            <p class="quantity">Quantidade: <input value="1" class="border-0 input_choose_quantity" type="number" name="" id=""></p>
             <p class="price">Preço: <span class="price_color">$18,90</span></p>
           </div>
         </div>
 
         <div class="shopping_container_box">
+          <iconify-icon class="icon_position_box_shopping" icon="mdi:close" width="27" height="27"></iconify-icon>
           <img src="images/menu-4.png" alt="" />
           <div class="shopping_container_box_content">
             <p class="title_box_shopping">O Club dos Sabores</p>
-            <p class="quantity">Quantidade:</p>
+            <p class="quantity">Quantidade: <input value="1" class="border-0 input_choose_quantity" type="number" name="" id=""></p>
             <p class="price">Preço: <span class="price_color">$22,90</span></p>
           </div>
         </div>
 
         <div class="shopping_container_box">
+          <iconify-icon class="icon_position_box_shopping" icon="mdi:close" width="27" height="27"></iconify-icon>
           <img src="images/menu-6.png" alt="" />
           <div class="shopping_container_box_content">
             <p class="title_box_shopping">Garden Delight</p>
-            <p class="quantity">Quantidade:</p>
+            <p class="quantity">Quantidade: <input value="1" class="border-0 input_choose_quantity" type="number" name="" id=""></p>
             <p class="price">Preço: <span class="price_color">$64,90</span></p>
           </div>
         </div>
@@ -186,40 +200,64 @@
         <h4 class="subtitle_shopping_cart">
           Total : <span class="price_color">$235,40</span>
         </h4>
-        <input class="button_complete_order btn pt-2 pb-2 pl-3 pr-3" onclick="completedOrder()" type="submit" value="Concluir o Pedido">
+        <input
+          class="button_complete_order btn pt-2 pb-2 pl-3 pr-3"
+          onclick="completedOrder()"
+          type="submit"
+          value="Concluir o Pedido"
+        />
       </div>
     </section>
 
     <!--* LOGIN -->
     <section id="login" class="hidden">
       <div
-        class="login_container border-top border-left border-bottom border-right">
+        class="login_container border-top border-left border-bottom border-right"
+      >
         <div>
           <h4 class="title_login">Conecte-se Agora</h4>
 
           <div class="input_box">
             <form class="form-group">
               <input
+                required maxlength="70" minlength="6"
                 class="input_login"
                 type="email"
                 id="email_login"
                 placeholder="digite seu e-mail"
               />
               <input
+                required maxlength="50" minlength="2"
                 class="input_login"
                 type="password"
                 id="password_login"
                 placeholder="digite sua senha"
               />
               <label class="checkbox_login" for="checkbox1"
-                ><input type="checkbox" name="" id="checkbox1" /> Lembrar de Mim</label
+                ><input type="checkbox" name="" id="checkbox1" /> Lembrar de
+                Mim</label
               >
-              <input onclick="sendToAnotherPage()" class="button_login_now btn pt-2 pb-2 pl-3 pr-3" type="submit" value="Conecte-se Agora">
+              <input
+                onclick="sendToAnotherPage()"
+                class="button_login_now btn pt-2 pb-2 pl-3 pr-3"
+                type="submit"
+                value="Conecte-se Agora"
+              />
             </form>
           </div>
-          
-          <h6 class="login_account_recovery">Esqueceu a senha? <a href="#" style="text-decoration: none;"><span class="login_account_recovery_click">Clique aqui</span></a></h6>
-          <h6 class="login_account_recovery mb-3">Não tem uma conta? <a href="#" style="text-decoration: none;"><span class="login_account_recovery_click">Criar agora</span></a></h6>
+
+          <h6 class="login_account_recovery">
+            Esqueceu a senha?
+            <a href="#" style="text-decoration: none"
+              ><span class="login_account_recovery_click">Clique aqui</span></a
+            >
+          </h6>
+          <h6 class="login_account_recovery mb-3">
+            Não tem uma conta?
+            <a href="#" style="text-decoration: none"
+              ><span class="login_account_recovery_click">Criar agora</span></a
+            >
+          </h6>
         </div>
       </div>
     </section>
@@ -235,17 +273,14 @@
             Sabores extraordinários e uma experiência inesquecível, venha se
             deliciar em nosso restaurante!
           </p>
-          <button class="button_order_now btn pt-2 pb-2 pl-3 pr-3">Peça Agora</button>
+          <button class="button_order_now btn pt-2 pb-2 pl-3 pr-3">
+            Peça Agora
+          </button>
         </div>
-        <div class="col-md-6 d-flex">
+        <div class="col-md-6 d-flex img_header_box">
           <img
             class="img-fluid justify-content-center"
-            src="images/home-img.png"
-            alt=""
-          />
-          <img
-            class="image_overlay"
-            src="images/home-parallax-img.png"
+            src="images/about-img.png"
             alt=""
           />
         </div>
@@ -255,27 +290,27 @@
     <aside id="foods_container">
       <div class="d-flex">
         <div class="foods image_container">
-          <img src="images/cat-1.png"/>
+          <img src="images/cat-1.png" />
           <h4 class="text-center title-foods">Combo</h4>
         </div>
         <div class="foods image_container foods-margin-left">
-          <img src="images/cat-2.png"/>
+          <img src="images/cat-2.png" />
           <h4 class="text-center title-foods">Pizza</h4>
         </div>
         <div class="foods image_container foods-margin-left">
-          <img src="images/cat-3.png"/>
+          <img src="images/cat-3.png" />
           <h4 class="text-center title-foods">Hambúrguer</h4>
         </div>
         <div class="foods image_container foods-margin-left">
-          <img src="images/cat-4.png"/>
+          <img src="images/cat-4.png" />
           <h4 class="text-center title-foods">Frango</h4>
         </div>
         <div class="foods image_container foods-margin-left">
-          <img src="images/cat-5.png"/>
+          <img src="images/cat-5.png" />
           <h4 class="text-center title-foods">Jantar</h4>
         </div>
         <div class="foods image_container foods-margin-left">
-          <img src="images/cat-6.png"/>
+          <img src="images/cat-6.png" />
           <h4 class="text-center title-foods">Café</h4>
         </div>
       </div>
@@ -284,7 +319,7 @@
     <main id="about_container">
       <div class="row">
         <div class="col-md-6">
-          <img class="img-fluid pt-2" src="images/about-img.png" alt="" />
+          <img class="img-fluid pt-2" src="images/home-img.png" alt="" />
         </div>
         <div class="col-md-6">
           <h3 class="title_box_choose_us">Porque escolher-nos</h3>
@@ -786,7 +821,7 @@
       <form id="form" class="form-group" onsubmit="return checkForm()">
         <div class="home_delivery_container">
           <div class="form-group w-25">
-            <label for="nome1">Seu Nome</label>
+            <label for="nome1">Seu Nome *</label>
             <input
               type="text"
               class="form-control"
@@ -796,7 +831,7 @@
             />
           </div>
           <div class="form-group w-25">
-            <label for="pedido1">Seu Pedido</label>
+            <label for="pedido1">Seu Pedido *</label>
             <input
               type="text"
               class="form-control"
@@ -814,10 +849,14 @@
               aria-describedby="detalhesAjuda"
               placeholder="Sua mensagem"
             />
-            <input class="btn button_order_now mt-3" type="submit" value="Proceder Pedido">
+            <input
+              class="btn button_order_now mt-3"
+              type="submit"
+              value="Proceder Pedido"
+            />
           </div>
           <div class="form-group w-25">
-            <label for="numero1">Seu Número</label>
+            <label for="numero1">Seu Número *</label>
             <input
               type="number"
               class="form-control"
@@ -830,7 +869,7 @@
             >
           </div>
           <div class="form-group w-25">
-            <label for="pedidos1">Quantos Pedidos</label>
+            <label for="pedidos1">Quantos Pedidos *</label>
             <input
               type="number"
               class="form-control"
@@ -852,7 +891,7 @@
               id="address_part"
               cols="30"
               rows="10"
-              placeholder="Seu endereço"
+              placeholder="Seu endereço *"
             ></textarea>
             <small id="endereçoAjuda" class="form-text text-muted"
               >Nunca vamos compartilhar seu endereço, com ninguém.</small
@@ -988,7 +1027,7 @@
               class="form-control border-0 form_button"
               placeholder="Digite seu email"
             />
-            <input class="btn_form" type="submit" value="Inscrever-se">
+            <input class="btn_form" type="submit" value="Inscrever-se" />
           </div>
 
           <small id="emailAjuda" class="form-text text-muted text-center"
@@ -1066,7 +1105,10 @@
         <div class="menu_box">
           <h3 class="title_blog">Links Rápidos</h3>
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#header_container">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#header_container"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1078,7 +1120,10 @@
             </a></span
           >
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#about_container">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#about_container"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1090,7 +1135,10 @@
             </a></span
           >
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#special_scroll_id">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#special_scroll_id"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1102,7 +1150,10 @@
             </a></span
           >
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#menu_container">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#menu_container"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1114,7 +1165,10 @@
             </a></span
           >
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#delivery_container">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#delivery_container"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1126,7 +1180,10 @@
             </a></span
           >
           <span class="arrow animacao_mouse"
-            ><a style="text-decoration: none; color: black;" href="#blogs_container">
+            ><a
+              style="text-decoration: none; color: black"
+              href="#blogs_container"
+            >
               <iconify-icon
                 class=""
                 icon="fe:paper-plane"
@@ -1268,6 +1325,29 @@
                 height="58"
               ></iconify-icon>
             </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="icons_container">
+        <div class="icons_box">
+          <a href="#">
+            <iconify-icon style="z-index: 999;" class="icon_img" icon="fe:facebook" width="30" height="30"></iconify-icon>
+          </a>
+        </div>
+        <div class="icons_box">
+          <a href="#">
+            <iconify-icon style="z-index: 999;" class="icon_img" icon="fe:twitter" width="30" height="30"></iconify-icon>
+          </a>
+        </div>
+        <div class="icons_box">
+          <a href="#">
+            <iconify-icon style="z-index: 999;" class="icon_img" icon="fe:instagram" width="30" height="30"></iconify-icon>
+          </a>
+        </div>
+        <div class="icons_box">
+          <a href="#">
+            <iconify-icon style="z-index: 999;" class="icon_img" icon="mdi:linkedin" width="30" height="30"></iconify-icon>
           </a>
         </div>
       </div>
