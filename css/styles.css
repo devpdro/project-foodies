@@ -47,9 +47,10 @@ body, html {
 .navbar_toggler_custom {
     border-color: transparent!important;
     font-size: 1rem!important;
-    color: transparent!important;
     line-height: 0.5!important;
-    outline: none!important;
+    outline-color: #27ae60!important;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
 }
 
 .title_logo {
@@ -473,7 +474,7 @@ nav ul li a:hover {
 /** SEÇÃO ENTREGA */ 
 
 #delivery_container {
-    margin-bottom: 7.4rem;
+    margin-bottom: 6.4rem;
 }
 
 .delivery_box_father_container {
@@ -486,6 +487,7 @@ nav ul li a:hover {
 
 .delivery_box_container {
     max-width: auto;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,21 +500,73 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.home_delivery_container {
-    margin-top: 3rem;
-    align-items: center;
+.container_form {
     display: flex;
     justify-content: center;
-    padding: 10px 15px;
-    flex-direction: column;
-    height: 340px;
-    flex-wrap: wrap;
+    margin: 1.5rem auto 0 auto;
 }
 
-.title_form {
-    color: #130f40;
-    font-weight: 700;
-    font-size: 1.3rem;
+.container_box_123 {
+    width: 300px;
+}
+
+.container_box_form {
+    padding: 0 20px 20px 20px;
+}
+
+.label_form {
+    display: block;
+    color: #000;
+    font-size: 1.1rem;
+}
+
+.input_form {
+    border-radius: 4px;
+    border: 1px solid #808080;
+    outline: none;
+    padding: 0.4rem;
+    width: 250px;
+    height: 2.6rem;
+}
+
+.input_textarea {
+    margin-top: 1rem;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    outline: none;
+    width: 250px;
+    max-height: 220px;
+    padding: 0.4rem;
+}
+
+.input_date {
+    width: 155px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    outline: none;
+    padding: 0.4rem;
+    height: 2.6rem;
+}
+
+.input_form::placeholder {
+    border-color: #130f40;
+}
+
+.input_form:focus {
+    border-color: #130f40;
+}
+
+.button_form_process {
+    width: 16rem;
+    margin-top: 1.2rem;
+    padding: 1.2rem;
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.button_form_process:hover {
+    background-color: #130f40;
+    transition: all 0.5s ease;
 }
 
 /** SEÇÃO BLOGS */ 

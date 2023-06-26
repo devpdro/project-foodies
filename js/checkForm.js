@@ -1,15 +1,13 @@
 function checkForm() {
-  var nome = document.getElementById("nome_part").value;
-  var yourRequest = document.getElementById("order_part").value;
-  var yourNumber = document.getElementById("number_part").value;
-  var howManyOrders = document.getElementById("howManyOrders_part").value;
-  var address = document.getElementById("address_part").value;
+  var nome = document.getElementById("name_form").value;
+  var yourRequest = document.getElementById("pedido_form").value;
+  var yourNumber = document.getElementById("numero_form").value;
+  var address = document.getElementById("input_box_textarea").value;
 
   if (
     nome === "" ||
     yourRequest === "" ||
     yourNumber === "" ||
-    howManyOrders === "" ||
     address === ""
   ) {
     Swal.fire({
@@ -47,15 +45,6 @@ function checkForm() {
     return false;
   }
 
-  if (howManyOrders.length < 1) {
-    Swal.fire({
-      icon: "error",
-      title: "Erro!",
-      text: "Quantos pedidos deve ter no mínimo 1 caracter",
-    });
-    return false;
-  }
-
   if (address.length < 10) {
     Swal.fire({
       icon: "error",
@@ -88,15 +77,6 @@ function checkForm() {
       icon: "error",
       title: "Erro!",
       text: "Seu número deve ter no máximo 18 caracteres",
-    });
-    return false;
-  }
-
-  if (howManyOrders.length > 38) {
-    Swal.fire({
-      icon: "error",
-      title: "Erro!",
-      text: "Quantos pedidos deve ter no máximo 38 caracteres",
     });
     return false;
   }

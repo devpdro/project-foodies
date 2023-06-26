@@ -95,12 +95,12 @@
             <a href="#blogs_container" class="link_navigation">Blogs</a>
           </li>
         </ul>
-        <div class="navbar_container_responsive ">
+        <div class="navbar_container_responsive">
           <div class="icons_center_nav">
             <div onclick="searchPage()">
               <a href="#">
                 <iconify-icon
-                  class="icon_style "
+                  class="icon_style"
                   icon="material-symbols:search"
                   width="40"
                   height="40"
@@ -927,20 +927,19 @@
         <h1 class="text-center title_special_dishes">Entrega rápida em casa</h1>
         <div class="delivery_box_father_container">
           <div class="delivery_box_container">
-            <img src="images/icon-1.png" alt="" />
-            <h5 class="text-center title_form">7h00 às 22h00</h5>
+            <img src="images/icon-3.png" alt="" />
+            <h5 class="text-center title_form">Araçatuba, SP - 16015244</h5>
           </div>
           <div class="delivery_box_container">
             <img src="images/icon-2.png" alt="" />
             <h5 class="text-center title_form">(19) 98737-8834</h5>
           </div>
           <div class="delivery_box_container">
-            <img src="images/icon-3.png" alt="" />
-            <h5 class="text-center title_form">Araçatuba, SP - 16015244</h5>
+            <img src="images/icon-1.png" alt="" />
+            <h5 class="text-center title_form">7h00 às 22h00</h5>
           </div>
         </div>
-        <form id="form" class="" onsubmit="return checkForm()">
-          <div class="home_delivery_container">
+        <!--<div class="home_delivery_container">
             <div class="input_name_responsiv">
               <label class="label_responsiv_form" for="nome1">Seu Nome *</label>
               <input
@@ -1026,9 +1025,105 @@
                 >Nunca vamos compartilhar seu endereço, com ninguém.</small
               >
             </div>
+          </div>-->
+
+        <form id="form" class="d-flex" onsubmit="return checkForm()">
+          <div class="container_form">
+            <div class="container_box_123">
+              <div class="container_box_form">
+                <label class="label_form" for="name_form">Seu nome *</label>
+                <input
+                  class="input_form"
+                  type="text"
+                  name=""
+                  id="name_form"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="container_box_form">
+                <label class="label_form" for="pedido_form">Seu Pedido *</label>
+                <input
+                  class="input_form"
+                  type="text"
+                  name=""
+                  id="pedido_form"
+                  placeholder="Digite a comida que você quer"
+                />
+                <textarea
+                  class="input_textarea"
+                  name=""
+                  id="input_box_textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Digite seu endereço aqui *"
+                ></textarea>
+                <small id="numero_form" class="form-text text-muted"
+                >Nunca vamos compartilhar seu endereço, com ninguém.</small
+              >
+              </div>
+            </div>
+            <div class="container_box_123">
+              <div class="container_box_form">
+                <label class="label_form" for="numero_form">Seu Número *</label>
+                <input
+                  class="input_form"
+                  type="number"
+                  name=""
+                  id="numero_form"
+                  placeholder="Digite seu número"
+                />
+                <small id="numero_form" class="form-text text-muted"
+                >Nunca vamos compartilhar seu número, com ninguém.</small
+              >
+              </div>
+              <div class="container_box_form">
+                <label class="label_form" for="detalhes_form"
+                  >Detalhes do(s) Pedido(s)</label
+                >
+                <input
+                  class="input_form"
+                  type="text"
+                  name=""
+                  id="detalhes_form"
+                  placeholder="Digite os detalhes do pedido"
+                />
+              </div>
+            </div>
+            <div class="container_box_123">
+              <div class="container_box_form">
+                <label class="label_form" for="observacao_form"
+                  >Bebidas</label
+                >
+                <input
+                  class="input_form"
+                  type="text"
+                  name=""
+                  id="observacao_form"
+                  placeholder="Digite uma bebida que deseja"
+                />
+              </div>
+              <div class="container_box_form">
+                <label class="label_form" for="data_form"
+                  >Quando Você Quiser</label
+                >
+                <input
+                  class="input_date"
+                  type="date"
+                  name=""
+                  id="data_form"
+                  placeholder="Escolha o dia da entrega"
+                />
+                <input
+                  class="btn button_form_process"
+                  type="submit"
+                  value="Proceder Pedido"
+                />
+              </div>
+            </div>
           </div>
         </form>
       </section>
+
       <section id="blogs_container">
         <h4 class="text-center title_popular_food">Nossos Blogs</h4>
         <h1 class="text-center title_special_dishes">

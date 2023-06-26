@@ -1,6 +1,6 @@
 #shopping {
-    margin-top: 3.3rem;
-    
+    margin-top: 1.3rem;
+    padding: 0 20px 0 20px; 
 }
 
 .shopping_container {
@@ -19,7 +19,7 @@
     align-items: center;
     position: relative;
     padding: 10px;
-    width: 24rem; 
+    width: 22rem; 
     margin-top: 3.7rem;
     margin-left: 1rem;
     margin-right: 1rem;
