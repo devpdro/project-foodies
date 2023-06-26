@@ -1,9 +1,9 @@
 @media screen and (max-width:767px) {
 
     /** CABEÇALHO */ 
-
+    
     #header_container {
-        margin-top: 5rem!important;
+        margin-top: 2rem!important;
         margin-bottom: 6rem!important;
         padding: 0 30px 0 30px;
     }
@@ -12,6 +12,13 @@
         transition: all 0.4s ease;
         margin-top: 5.3rem;
     }
+    
+    /** BARRA DE NAVEGAÇÃO */ 
+    
+    .navbar_container_responsive {
+        margin: 0 auto;
+    }
+
 
     /** SEÇÃO DE COMIDAS */ 
 

@@ -29,8 +29,6 @@
       media="screen"
     />
 
-
-
     <!--* LINK CSS -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/backToTheTop.css" />
@@ -47,90 +45,102 @@
     />
   </head>
   <body id="container_width">
-    <header class="active" id="header-id-container">
-      <div class="header-left">
-        <iconify-icon
-          icon="fe:cutlery"
-          style="color: #27ae60"
-          width="45"
-          height="45"
-        ></iconify-icon>
-        <a style="text-decoration: none" href="index.html"
-          ><span class="title_logo">Foodies</span></a
-        >
-        <nav>
-          <ul>
-            <li>
-              <a href="#header_container" class="link_navigation">Início</a>
-            </li>
-            <li>
-              <a href="#about_container" class="link_navigation">Sobre</a>
-            </li>
-            <li>
-              <a href="#special_scroll_id" class="link_navigation">Popular</a>
-            </li>
-            <li>
-              <a href="#menu_container" class="link_navigation">Cardápio</a>
-            </li>
-            <li>
-              <a href="#delivery_container" class="link_navigation">Entrega</a>
-            </li>
-            <li>
-              <a href="#blogs_container" class="link_navigation">Blogs</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="d-flex">
-          <div onclick="searchPage()">
-            <a href="#">
-              <iconify-icon
-                class="icon_style"
-                icon="material-symbols:search"
-                width="40"
-                height="40"
-              ></iconify-icon>
-            </a>
-          </div>
-          <div onclick="shoppingPage()">
-            <a href="#">
-              <iconify-icon
-                class="icon_style"
-                icon="material-symbols:shopping-cart-rounded"
-                width="40"
-                height="40"
-              ></iconify-icon>
-            </a>
-          </div>
-          <div onclick="loginPage()">
-            <a href="#">
-              <iconify-icon
-                class="icon_style"
-                icon="material-symbols:account-circle"
-                width="40"
-                height="40"
-              ></iconify-icon>
-            </a>
-          </div>
-          <div onclick="resetPage()">
-            <a href="#">
-              <iconify-icon
-                class="icon_style"
-                icon="material-symbols:home-outline"
-                width="40"
-                height="40"
-              ></iconify-icon>
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <iconify-icon
+        icon="fe:cutlery"
+        style="color: #27ae60"
+        width="45"
+        height="45"
+      ></iconify-icon>
+      <a style="text-decoration: none" href="index.html"
+        ><span class="title_logo">Foodies</span></a
+      >
+      <button
+        class="navbar-toggler navbar_toggler_custom"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span>
+          <iconify-icon
+            icon="solar:hamburger-menu-linear"
+            style="color: #27ae60"
+            width="40"
+            height="40"
+          ></iconify-icon>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li>
+            <a href="#header_container" class="link_navigation">Início</a>
+          </li>
+          <li>
+            <a href="#about_container" class="link_navigation">Sobre</a>
+          </li>
+          <li>
+            <a href="#special_scroll_id" class="link_navigation">Popular</a>
+          </li>
+          <li>
+            <a href="#menu_container" class="link_navigation">Cardápio</a>
+          </li>
+          <li>
+            <a href="#delivery_container" class="link_navigation">Entrega</a>
+          </li>
+          <li>
+            <a href="#blogs_container" class="link_navigation">Blogs</a>
+          </li>
+        </ul>
+        <div class="navbar_container_responsive ">
+          <div class="icons_center_nav">
+            <div onclick="searchPage()">
+              <a href="#">
+                <iconify-icon
+                  class="icon_style "
+                  icon="material-symbols:search"
+                  width="40"
+                  height="40"
+                ></iconify-icon>
+              </a>
+            </div>
+            <div onclick="shoppingPage()">
+              <a href="#">
+                <iconify-icon
+                  class="icon_style"
+                  icon="material-symbols:shopping-cart-rounded"
+                  width="40"
+                  height="40"
+                ></iconify-icon>
+              </a>
+            </div>
+            <div onclick="loginPage()">
+              <a href="#">
+                <iconify-icon
+                  class="icon_style"
+                  icon="material-symbols:account-circle"
+                  width="40"
+                  height="40"
+                ></iconify-icon>
+              </a>
+            </div>
+            <div onclick="resetPage()">
+              <a href="#">
+                <iconify-icon
+                  class="icon_style"
+                  icon="material-symbols:home-outline"
+                  width="40"
+                  height="40"
+                ></iconify-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header-right">
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </header>
+    </nav>
 
     <!--* SEARCH -->
     <section id="search" class="hidden">
@@ -360,454 +370,448 @@
       </div>
     </section>
 
-    <section id="header_container">
-      <div class="row">
-        <div class="col-md-6">
-          <h4 class="title_welcome">Bem-vindo ao Foodies</h4>
-          <h1 class="title_different_tastes">
-            Diferentes Especiarias Para Diferentes Gostos 😋
-          </h1>
-          <p class="lead title_different_tastes_text">
-            Sabores extraordinários e uma experiência inesquecível, venha se
-            deliciar em nosso restaurante!
-          </p>
-          <button class="button_order_now btn pt-2 pb-2 pl-3 pr-3">
-            Peça Agora
-          </button>
-        </div>
-        <div class="col-md-6 d-flex img_header_box">
-          <img
-            class="img-fluid justify-content-center"
-            src="images/about-img.png"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <aside id="foods_container">
-      <div class="d-flex responsive_foods">
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-1.png" />
-          <h4 class="text-center title-foods">Combo</h4>
-        </div>
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-2.png" />
-          <h4 class="text-center title-foods foods_margin_left">Pizza</h4>
-        </div>
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-3.png" />
-          <h4 class="text-center title-foods foods_margin_left">Hambúrguer</h4>
-        </div>
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-4.png" />
-          <h4 class="text-center title-foods">Frango</h4>
-        </div>
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-5.png" />
-          <h4 class="text-center title-foods">Jantar</h4>
-        </div>
-        <div class="foods image_container foods_margin_left">
-          <img src="images/cat-6.png" />
-          <h4 class="text-center title-foods">Café</h4>
-        </div>
-      </div>
-    </aside>
-
-    <main id="about_container">
-      <div class="row box_about_responsive">
-        <div class="col-md-6 img_about_responsive">
-          <img
-            class="img-fluid pt-2 "
-            src="images/home-img.png"
-            alt=""
-          />
-        </div>
-        <div class="col-md-6">
-          <h3 class="title_box_choose_us">Porque escolher-nos</h3>
-          <h1 class="title_box_delicious_food">
-            O que torna nossa comida deliciosa!
-          </h1>
-          <p class="lead text_responsiv_about">
-            Ingredientes frescos e sabores autênticos que encantam paladares em
-            nosso restaurante.
-          </p>
-          <div class="box_container_benefits">
-            <div class="benefits_box">
-              <img class="icon_about" src="images/serv-1.png" alt="" />Entrega
-              rápida
-            </div>
-            <div class="benefits_box">
-              <img class="icon_about" src="images/serv-2.png" alt="" />Comida
-              fresca
-            </div>
+    <div id="hidden_container_all">
+      <section id="header_container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="title_welcome">Bem-vindo ao Foodies</h4>
+            <h1 class="title_different_tastes">
+              Diferentes Especiarias Para Diferentes Gostos 😋
+            </h1>
+            <p class="lead title_different_tastes_text">
+              Sabores extraordinários e uma experiência inesquecível, venha se
+              deliciar em nosso restaurante!
+            </p>
+            <button class="button_order_now btn pt-2 pb-2 pl-3 pr-3">
+              Peça Agora
+            </button>
           </div>
-          <div class="box_container_benefits">
-            <div class="benefits_box">
-              <img class="icon_about" src="images/serv-3.png" alt="" />Ótima
-              qualidade
-            </div>
-            <div class="benefits_box">
-              <img class="icon_about" src="images/serv-4.png" alt="" />Suporte
-              24/7
-            </div>
+          <div class="col-md-6 d-flex img_header_box">
+            <img
+              class="img-fluid justify-content-center"
+              src="images/about-img.png"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-    </main>
+      </section>
 
-    <section id="special_scroll_id">
-      <h3 class="text-center title_popular_food">Comida popular</h3>
-      <h1 class="text-center title_special_dishes">Nossos Pratos Especiais</h1>
-      <div class="div_container">
-        <div class="box_special_dishes">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img class="img-fluid" src="images/food-1.png" alt="" />
-          <h4 class="text-center title_food">Frango Dourado</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$39,90 <span class="dashed_value">$49,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
+      <aside id="foods_container">
+        <div class="d-flex responsive_foods">
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-1.png" />
+            <h4 class="text-center title-foods">Combo</h4>
+          </div>
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-2.png" />
+            <h4 class="text-center title-foods foods_margin_left">Pizza</h4>
+          </div>
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-3.png" />
+            <h4 class="text-center title-foods foods_margin_left">
+              Hambúrguer
+            </h4>
+          </div>
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-4.png" />
+            <h4 class="text-center title-foods">Frango</h4>
+          </div>
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-5.png" />
+            <h4 class="text-center title-foods">Jantar</h4>
+          </div>
+          <div class="foods image_container foods_margin_left">
+            <img src="images/cat-6.png" />
+            <h4 class="text-center title-foods">Café</h4>
+          </div>
         </div>
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-2.png" alt="" />
-          <h4 class="text-center title_food">Hambúrguer Gourmet</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$33,90 <span class="dashed_value">$43,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
+      </aside>
+      <main id="about_container">
+        <div class="row box_about_responsive">
+          <div class="col-md-6 img_about_responsive">
+            <img class="img-fluid pt-2" src="images/home-img.png" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h3 class="title_box_choose_us">Porque escolher-nos</h3>
+            <h1 class="title_box_delicious_food">
+              O que torna nossa comida deliciosa!
+            </h1>
+            <p class="lead text_responsiv_about">
+              Ingredientes frescos e sabores autênticos que encantam paladares
+              em nosso restaurante.
+            </p>
+            <div class="box_container_benefits">
+              <div class="benefits_box">
+                <img class="icon_about" src="images/serv-1.png" alt="" />Entrega
+                rápida
+              </div>
+              <div class="benefits_box">
+                <img class="icon_about" src="images/serv-2.png" alt="" />Comida
+                fresca
+              </div>
+            </div>
+            <div class="box_container_benefits">
+              <div class="benefits_box">
+                <img class="icon_about" src="images/serv-3.png" alt="" />Ótima
+                qualidade
+              </div>
+              <div class="benefits_box">
+                <img class="icon_about" src="images/serv-4.png" alt="" />Suporte
+                24/7
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-3.png" alt="" />
-          <h4 class="text-center title_food">Pizza Capricho Italiano</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$59,90 <span class="dashed_value">$69,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
+      </main>
+      <section id="special_scroll_id">
+        <h3 class="text-center title_popular_food">Comida popular</h3>
+        <h1 class="text-center title_special_dishes">
+          Nossos Pratos Especiais
+        </h1>
+        <div class="div_container">
+          <div class="box_special_dishes">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img class="img-fluid" src="images/food-1.png" alt="" />
+            <h4 class="text-center title_food">Frango Dourado</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$39,90 <span class="dashed_value">$49,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-2.png" alt="" />
+            <h4 class="text-center title_food">Hambúrguer Gourmet</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$33,90 <span class="dashed_value">$43,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-3.png" alt="" />
+            <h4 class="text-center title_food">Pizza Capricho Italiano</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$59,90 <span class="dashed_value">$69,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-4.png" alt="" />
+            <h4 class="text-center title_food">Hambúrguer Edition</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star-o"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$79,90 <span class="dashed_value">$89,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
         </div>
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-4.png" alt="" />
-          <h4 class="text-center title_food">Hambúrguer Edition</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star-o"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$79,90 <span class="dashed_value">$89,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
+      </section>
+      <section id="special_dishes_container">
+        <div class="div_container">
+          <div class="box_special_dishes">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-5.png" alt="" />
+            <h4 class="text-center title_food">Pizza Sublime</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$89,90 <span class="dashed_value">$99,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-6.png" alt="" />
+            <h4 class="text-center title_food">Pizza Mediterrânea</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star-o"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$54,90 <span class="dashed_value">$64,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-7.png" alt="" />
+            <h4 class="text-center title_food">Hambúrguer Premium</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$36,90 <span class="dashed_value">$58,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
+          <div class="box_special_dishes special_box_margin">
+            <iconify-icon
+              class="heart"
+              icon="fe:heart"
+              width="35"
+              height="35"
+            ></iconify-icon>
+            <img src="images/food-8.png" alt="" />
+            <h4 class="text-center title_food">Pizza Magnífica alla</h4>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <iconify-icon
+              icon="fe:star"
+              style="color: gold"
+              width="30"
+              height="30"
+            ></iconify-icon>
+            <h4>$123,90 <span class="dashed_value">$153,90</span></h4>
+            <button class="btn button_add_cart">Adicionar ao Cartão</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="special_dishes_container">
-      <div class="div_container">
-        <div class="box_special_dishes">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-5.png" alt="" />
-          <h4 class="text-center title_food">Pizza Sublime</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$89,90 <span class="dashed_value">$99,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
-        </div>
-
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-6.png" alt="" />
-          <h4 class="text-center title_food">Pizza Mediterrânea</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star-o"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$54,90 <span class="dashed_value">$64,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
-        </div>
-
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-7.png" alt="" />
-          <h4 class="text-center title_food">Hambúrguer Premium</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$36,90 <span class="dashed_value">$58,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
-        </div>
-
-        <div class="box_special_dishes special_box_margin">
-          <iconify-icon
-            class="heart"
-            icon="fe:heart"
-            width="35"
-            height="35"
-          ></iconify-icon>
-          <img src="images/food-8.png" alt="" />
-          <h4 class="text-center title_food">Pizza Magnífica alla</h4>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <iconify-icon
-            icon="fe:star"
-            style="color: gold"
-            width="30"
-            height="30"
-          ></iconify-icon>
-          <h4>$123,90 <span class="dashed_value">$153,90</span></h4>
-          <button class="btn button_add_cart">Adicionar ao Cartão</button>
-        </div>
-      </div>
-    </section>
-
-    <div id="ads_container_div_hidden">
       <section id="ads_container_div ">
         <div class="row">
           <div
@@ -864,652 +868,645 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <section id="menu_container">
-      <h4 class="text-center title_popular_food">Nosso Cardápio</h4>
-      <h1 class="text-center title_special_dishes">Nossos melhores pratos</h1>
-      <div class="menu_container_foods mt-4">
-        <div class="menu_box_foods">
-          <img class="img-fluid" src="images/menu-1.png" alt="" />
-          <div class="ml-3">
-            <h4 class="title_foods_box">Gourmet Fire</h4>
-            <h4 class="style_money">$28,90</h4>
-          </div>
-        </div>
-        <div class="menu_box_foods menu_box_foods_margin">
-          <img class="img-fluid" src="images/menu-2.png" alt="" />
-          <div class="ml-2">
-            <h4 class="title_foods_box">Italian Stallion</h4>
-            <span class="style_money">$76,90</span>
-          </div>
-        </div>
-        <div class="menu_box_foods menu_box_foods_margin">
-          <img class="img-fluid" src="images/menu-3.png" alt="" />
-          <div class="ml-2">
-            <h4 class="title_foods_box">Classic Reuben</h4>
-            <span class="style_money">18,90</span>
-          </div>
-        </div>
-        <div class="menu_box_foods menu_box_foods_margin mt-3">
-          <img class="img-fluid" src="images/menu-4.png" alt="" />
-          <div class="ml-2">
-            <h4 class="title_foods_box">O Club dos Sabores</h4>
-            <span class="style_money">$22,90</span>
-          </div>
-        </div>
-        <div class="menu_box_foods menu_box_foods_margin mt-3">
-          <img
-            style="width: 150px"
-            class="img-fluid"
-            src="images/menu-5.png"
-            alt=""
-          />
-          <div class="ml-1">
-            <h4 class="title_foods_box">Fritas Irresistíveis</h4>
-            <span class="style_money">$37,90</span>
-          </div>
-        </div>
-        <div class="menu_box_foods menu_box_foods_margin mt-3">
-          <img class="img-fluid" src="images/menu-6.png" alt="" />
-          <div class="ml-2">
-            <h4 class="title_foods_box">Garden Delight</h4>
-            <span class="style_money">64,90</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="delivery_container">
-      <h4 class="text-center title_popular_food">Peça agora</h4>
-      <h1 class="text-center title_special_dishes">Entrega rápida em casa</h1>
-      <div class="delivery_box_father_container">
-        <div class="delivery_box_container">
-          <img src="images/icon-1.png" alt="" />
-          <h5 class="text-center title_form">7h00 às 22h00</h5>
-        </div>
-        <div class="delivery_box_container">
-          <img src="images/icon-2.png" alt="" />
-          <h5 class="text-center title_form">(19) 98737-8834</h5>
-        </div>
-        <div class="delivery_box_container">
-          <img src="images/icon-3.png" alt="" />
-          <h5 class="text-center title_form">Araçatuba, SP - 16015244</h5>
-        </div>
-      </div>
-
-      <form id="form" class="" onsubmit="return checkForm()">
-        <div class="home_delivery_container">
-          <div class="input_name_responsiv">
-            <label class="label_responsiv_form" for="nome1">Seu Nome *</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nome_part"
-              aria-describedby="nomeAjuda"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div class="form-group input_name_responsiv">
-            <label class="label_responsiv_form" for="pedido1"
-              >Seu Pedido *</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="order_part"
-              aria-describedby="pedidoAjuda"
-              placeholder="Digite a comida que você quer"
-            />
-          </div>
-          <div class="form-group input_name_responsiv">
-            <label class="label_responsiv_form" for="detalhes1"
-              >Detalhes do Pedido</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="detalhes1"
-              aria-describedby="detalhesAjuda"
-              placeholder="Sua mensagem"
-            />
-            <input
-              class="btn button_order_now mt-3"
-              type="submit"
-              value="Proceder Pedido"
-            />
-          </div>
-          <div class="form-group input_name_responsiv">
-            <label class="label_responsiv_form" for="numero1"
-              >Seu Número *</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="number_part"
-              aria-describedby="numeroAjuda"
-              placeholder="Digite seu número"
-            />
-            <small id="numeroAjuda" class="form-text text-muted"
-              >Nunca vamos compartilhar seu número, com ninguém.</small
-            >
-          </div>
-          <div class="form-group input_name_responsiv">
-            <label class="label_responsiv_form" for="pedidos1"
-              >Quantos Pedidos *</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="howManyOrders_part"
-              aria-describedby="pedidosAjuda"
-              placeholder="Números de pedidos"
-            />
-          </div>
-          <div class="form-group input_name_responsiv">
-            <label for="data1">Quando Você Quiser</label>
-            <input type="date" name="" id="data1" />
-          </div>
-          <div class="form-group input_name_responsiv">
-            <textarea
-              class="form-control"
-              resize
-              wrap="hard"
-              name=""
-              id="address_part"
-              cols="30"
-              rows="10"
-              placeholder="Seu endereço *"
-            ></textarea>
-            <small id="endereçoAjuda" class="form-text text-muted"
-              >Nunca vamos compartilhar seu endereço, com ninguém.</small
-            >
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <section id="blogs_container">
-      <h4 class="text-center title_popular_food">Nossos Blogs</h4>
-      <h1 class="text-center title_special_dishes">Nossas Histórias Diárias</h1>
-      <div class="blogs_box_father_container">
-        <div class="blogs_box_container">
-          <img class="img_blogs" src="images/blog-1.jpg" alt="" />
-          <div class="d-flex align-items-center">
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Food /<iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Burger /
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon
-            >Pizza
-          </div>
-          <h1 class="title_blog">
-            Delícias à Mesa: O Blog que Celebra a Gastronomia.
-          </h1>
-          <p class="subtitle_blog pl-3">
-            Uma explosão de sabores e sorrisos contagiantes no restaurante hoje.
-            Clientes encantados saborearam pratos extraordinários, deixando seus
-            paladares extasiados.
-          </p>
-          <button class="btn button_blog">Leia mais</button>
-        </div>
-        <div class="blogs_box_container blogs_box_margin">
-          <img class="img_blogs" src="images/blog-2.jpg" alt="" />
-          <div class="d-flex align-items-center">
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Food /<iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Burger /
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon
-            >Pizza
-          </div>
-          <h1 class="title_blog">Explorando os Sabores do Nosso Restaurante</h1>
-          <p class="subtitle_blog pl-3">
-            Uma noite encantadora no restaurante, com músicos talentosos criando
-            uma trilha sonora perfeita para os comensais que desfrutaram de uma
-            gastronomia excepcional.
-          </p>
-          <button class="btn button_blog">Leia mais</button>
-        </div>
-        <div class="blogs_box_container blogs_box_margin">
-          <img class="img_blogs" src="images/blog-3.jpg" alt="" />
-          <div class="d-flex align-items-center">
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Food /<iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon>
-            Burger /
-            <iconify-icon
-              icon="fe:tag"
-              class="tag"
-              style="color: #27ae60"
-              width="24"
-              height="24"
-            ></iconify-icon
-            >Pizza
-          </div>
-          <h1 class="title_blog">
-            Descobrindo os Tesouros do Nosso Restaurante
-          </h1>
-          <p class="subtitle_blog pl-3">
-            Hoje, nosso restaurante foi palco de um encontro especial entre
-            amigos. Rodeados por uma atmosfera acolhedora, compartilharam
-            risadas, conversas animadas e pratos deliciosos.
-          </p>
-          <button class="btn button_blog">Leia mais</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="newsletter_container">
-      <h1 class="text-center title_form_newsletter">Newsletter</h1>
-      <form action="">
-        <div class="form-group">
-          <div class="box_form">
-            <input
-              type="text"
-              class="form-control border-0 form_button"
-              placeholder="Digite seu email"
-            />
-            <input class="btn_form" type="submit" value="Inscrever-se" />
-          </div>
-
-          <small id="emailAjuda" class="form-text text-muted text-center"
-            >Nunca vamos compartilhar seu email, com ninguém.</small
-          >
-        </div>
-      </form>
-    </section>
-
-    <footer id="footer_container">
-      <div class="menu_container padding_between_boxes">
-        <div class="menu_box our_menu">
-          <h3 class="title_blog">Nosso Cardápio</h3>
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Hambúrguer</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Pizza</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Bebidas</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Frango</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Café</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            E mais...</span
-          >
-        </div>
-        <div class="menu_box quick_links">
-          <h3 class="title_blog">Links Rápidos</h3>
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#header_container"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Início
-            </a></span
-          >
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#about_container"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Sobre
-            </a></span
-          >
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#special_scroll_id"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Popular
-            </a></span
-          >
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#menu_container"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Cardápio
-            </a></span
-          >
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#delivery_container"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Entrega
-            </a></span
-          >
-          <span class="arrow animacao_mouse"
-            ><a
-              style="text-decoration: none; color: black"
-              href="#blogs_container"
-            >
-              <iconify-icon
-                class=""
-                icon="fe:paper-plane"
-                style="color: #27ae60"
-                width="20"
-                height="20"
-              ></iconify-icon>
-              Blogs
-            </a></span
-          >
-        </div>
-
-        <div class="menu_box extra_links">
-          <h3 class="title_blog">Links extras</h3>
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Meu Pedido</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Minha Conta</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Meu Favorito</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Termos de Uso</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Política de Privacidade</span
-          >
-        </div>
-
-        <div class="menu_box">
-          <h3 class="title_blog">Horário de Funcionamento</h3>
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Segunda-Feira: 7h00 às 22h00</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Terça-Feira: 7h00 às 22h00</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Quarta-Feira: 7h00 às 22h00</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Quinta-Feira: 7h00 às 22h00</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Sexta-Feira: 7h00 às 22h00</span
-          >
-          <span class="arrow animacao_mouse"
-            ><iconify-icon
-              class=""
-              icon="fe:paper-plane"
-              style="color: #27ae60"
-              width="20"
-              height="20"
-            ></iconify-icon>
-            Sábado e Domingo: Fechado</span
-          >
-        </div>
-
-        <div dataScroll="slow" dataAnima="scroll">
-          <a href="#inicio">
-            <div class="top">
-              <iconify-icon
-                class=""
-                icon="ic:baseline-keyboard-arrow-up"
-                style="color: #27ae60"
-                width="58"
-                height="58"
-              ></iconify-icon>
+      <section id="menu_container">
+        <h4 class="text-center title_popular_food">Nosso Cardápio</h4>
+        <h1 class="text-center title_special_dishes">Nossos melhores pratos</h1>
+        <div class="menu_container_foods mt-4">
+          <div class="menu_box_foods">
+            <img class="img-fluid" src="images/menu-1.png" alt="" />
+            <div class="ml-3">
+              <h4 class="title_foods_box">Gourmet Fire</h4>
+              <h4 class="style_money">$28,90</h4>
             </div>
-          </a>
+          </div>
+          <div class="menu_box_foods menu_box_foods_margin">
+            <img class="img-fluid" src="images/menu-2.png" alt="" />
+            <div class="ml-2">
+              <h4 class="title_foods_box">Italian Stallion</h4>
+              <span class="style_money">$76,90</span>
+            </div>
+          </div>
+          <div class="menu_box_foods menu_box_foods_margin">
+            <img class="img-fluid" src="images/menu-3.png" alt="" />
+            <div class="ml-2">
+              <h4 class="title_foods_box">Classic Reuben</h4>
+              <span class="style_money">18,90</span>
+            </div>
+          </div>
+          <div class="menu_box_foods menu_box_foods_margin mt-3">
+            <img class="img-fluid" src="images/menu-4.png" alt="" />
+            <div class="ml-2">
+              <h4 class="title_foods_box">O Club dos Sabores</h4>
+              <span class="style_money">$22,90</span>
+            </div>
+          </div>
+          <div class="menu_box_foods menu_box_foods_margin mt-3">
+            <img
+              style="width: 150px"
+              class="img-fluid"
+              src="images/menu-5.png"
+              alt=""
+            />
+            <div class="ml-1">
+              <h4 class="title_foods_box">Fritas Irresistíveis</h4>
+              <span class="style_money">$37,90</span>
+            </div>
+          </div>
+          <div class="menu_box_foods menu_box_foods_margin mt-3">
+            <img class="img-fluid" src="images/menu-6.png" alt="" />
+            <div class="ml-2">
+              <h4 class="title_foods_box">Garden Delight</h4>
+              <span class="style_money">64,90</span>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="icons_container">
-        <div class="icons_box">
-          <a href="#">
-            <iconify-icon
-              style="z-index: 999"
-              class="icon_img"
-              icon="fe:facebook"
-              width="30"
-              height="30"
-            ></iconify-icon>
-          </a>
+      </section>
+      <section id="delivery_container">
+        <h4 class="text-center title_popular_food">Peça agora</h4>
+        <h1 class="text-center title_special_dishes">Entrega rápida em casa</h1>
+        <div class="delivery_box_father_container">
+          <div class="delivery_box_container">
+            <img src="images/icon-1.png" alt="" />
+            <h5 class="text-center title_form">7h00 às 22h00</h5>
+          </div>
+          <div class="delivery_box_container">
+            <img src="images/icon-2.png" alt="" />
+            <h5 class="text-center title_form">(19) 98737-8834</h5>
+          </div>
+          <div class="delivery_box_container">
+            <img src="images/icon-3.png" alt="" />
+            <h5 class="text-center title_form">Araçatuba, SP - 16015244</h5>
+          </div>
         </div>
-        <div class="icons_box">
-          <a href="#">
-            <iconify-icon
-              style="z-index: 999"
-              class="icon_img"
-              icon="fe:twitter"
-              width="30"
-              height="30"
-            ></iconify-icon>
-          </a>
+        <form id="form" class="" onsubmit="return checkForm()">
+          <div class="home_delivery_container">
+            <div class="input_name_responsiv">
+              <label class="label_responsiv_form" for="nome1">Seu Nome *</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome_part"
+                aria-describedby="nomeAjuda"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="form-group input_name_responsiv">
+              <label class="label_responsiv_form" for="pedido1"
+                >Seu Pedido *</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="order_part"
+                aria-describedby="pedidoAjuda"
+                placeholder="Digite a comida que você quer"
+              />
+            </div>
+            <div class="form-group input_name_responsiv">
+              <label class="label_responsiv_form" for="detalhes1"
+                >Detalhes do Pedido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="detalhes1"
+                aria-describedby="detalhesAjuda"
+                placeholder="Sua mensagem"
+              />
+              <input
+                class="btn button_order_now mt-3"
+                type="submit"
+                value="Proceder Pedido"
+              />
+            </div>
+            <div class="form-group input_name_responsiv">
+              <label class="label_responsiv_form" for="numero1"
+                >Seu Número *</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="number_part"
+                aria-describedby="numeroAjuda"
+                placeholder="Digite seu número"
+              />
+              <small id="numeroAjuda" class="form-text text-muted"
+                >Nunca vamos compartilhar seu número, com ninguém.</small
+              >
+            </div>
+            <div class="form-group input_name_responsiv">
+              <label class="label_responsiv_form" for="pedidos1"
+                >Quantos Pedidos *</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="howManyOrders_part"
+                aria-describedby="pedidosAjuda"
+                placeholder="Números de pedidos"
+              />
+            </div>
+            <div class="form-group input_name_responsiv">
+              <label for="data1">Quando Você Quiser</label>
+              <input type="date" name="" id="data1" />
+            </div>
+            <div class="form-group input_name_responsiv">
+              <textarea
+                class="form-control"
+                resize
+                wrap="hard"
+                name=""
+                id="address_part"
+                cols="30"
+                rows="10"
+                placeholder="Seu endereço *"
+              ></textarea>
+              <small id="endereçoAjuda" class="form-text text-muted"
+                >Nunca vamos compartilhar seu endereço, com ninguém.</small
+              >
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="blogs_container">
+        <h4 class="text-center title_popular_food">Nossos Blogs</h4>
+        <h1 class="text-center title_special_dishes">
+          Nossas Histórias Diárias
+        </h1>
+        <div class="blogs_box_father_container">
+          <div class="blogs_box_container">
+            <img class="img_blogs" src="images/blog-1.jpg" alt="" />
+            <div class="d-flex align-items-center">
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Food /<iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Burger /
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon
+              >Pizza
+            </div>
+            <h1 class="title_blog">
+              Delícias à Mesa: O Blog que Celebra a Gastronomia.
+            </h1>
+            <p class="subtitle_blog pl-3">
+              Uma explosão de sabores e sorrisos contagiantes no restaurante
+              hoje. Clientes encantados saborearam pratos extraordinários,
+              deixando seus paladares extasiados.
+            </p>
+            <button class="btn button_blog">Leia mais</button>
+          </div>
+          <div class="blogs_box_container blogs_box_margin">
+            <img class="img_blogs" src="images/blog-2.jpg" alt="" />
+            <div class="d-flex align-items-center">
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Food /<iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Burger /
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon
+              >Pizza
+            </div>
+            <h1 class="title_blog">
+              Explorando os Sabores do Nosso Restaurante
+            </h1>
+            <p class="subtitle_blog pl-3">
+              Uma noite encantadora no restaurante, com músicos talentosos
+              criando uma trilha sonora perfeita para os comensais que
+              desfrutaram de uma gastronomia excepcional.
+            </p>
+            <button class="btn button_blog">Leia mais</button>
+          </div>
+          <div class="blogs_box_container blogs_box_margin">
+            <img class="img_blogs" src="images/blog-3.jpg" alt="" />
+            <div class="d-flex align-items-center">
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Food /<iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon>
+              Burger /
+              <iconify-icon
+                icon="fe:tag"
+                class="tag"
+                style="color: #27ae60"
+                width="24"
+                height="24"
+              ></iconify-icon
+              >Pizza
+            </div>
+            <h1 class="title_blog">
+              Descobrindo os Tesouros do Nosso Restaurante
+            </h1>
+            <p class="subtitle_blog pl-3">
+              Hoje, nosso restaurante foi palco de um encontro especial entre
+              amigos. Rodeados por uma atmosfera acolhedora, compartilharam
+              risadas, conversas animadas e pratos deliciosos.
+            </p>
+            <button class="btn button_blog">Leia mais</button>
+          </div>
         </div>
-        <div class="icons_box">
-          <a href="#">
-            <iconify-icon
-              style="z-index: 999"
-              class="icon_img"
-              icon="fe:instagram"
-              width="30"
-              height="30"
-            ></iconify-icon>
-          </a>
+      </section>
+      <section id="newsletter_container">
+        <h1 class="text-center title_form_newsletter">Newsletter</h1>
+        <form action="">
+          <div class="form-group">
+            <div class="box_form">
+              <input
+                type="text"
+                class="form-control border-0 form_button"
+                placeholder="Digite seu email"
+              />
+              <input class="btn_form" type="submit" value="Inscrever-se" />
+            </div>
+            <small id="emailAjuda" class="form-text text-muted text-center"
+              >Nunca vamos compartilhar seu email, com ninguém.</small
+            >
+          </div>
+        </form>
+      </section>
+      <footer id="footer_container">
+        <div class="menu_container padding_between_boxes">
+          <div class="menu_box our_menu">
+            <h3 class="title_blog">Nosso Cardápio</h3>
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Hambúrguer</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Pizza</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Bebidas</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Frango</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Café</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              E mais...</span
+            >
+          </div>
+          <div class="menu_box quick_links">
+            <h3 class="title_blog">Links Rápidos</h3>
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#header_container"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Início
+              </a></span
+            >
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#about_container"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Sobre
+              </a></span
+            >
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#special_scroll_id"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Popular
+              </a></span
+            >
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#menu_container"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Cardápio
+              </a></span
+            >
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#delivery_container"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Entrega
+              </a></span
+            >
+            <span class="arrow animacao_mouse"
+              ><a
+                style="text-decoration: none; color: black"
+                href="#blogs_container"
+              >
+                <iconify-icon
+                  class=""
+                  icon="fe:paper-plane"
+                  style="color: #27ae60"
+                  width="20"
+                  height="20"
+                ></iconify-icon>
+                Blogs
+              </a></span
+            >
+          </div>
+          <div class="menu_box extra_links">
+            <h3 class="title_blog">Links extras</h3>
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Meu Pedido</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Minha Conta</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Meu Favorito</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Termos de Uso</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Política de Privacidade</span
+            >
+          </div>
+          <div class="menu_box">
+            <h3 class="title_blog">Horário de Funcionamento</h3>
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Segunda-Feira: 7h00 às 22h00</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Terça-Feira: 7h00 às 22h00</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Quarta-Feira: 7h00 às 22h00</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Quinta-Feira: 7h00 às 22h00</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Sexta-Feira: 7h00 às 22h00</span
+            >
+            <span class="arrow animacao_mouse"
+              ><iconify-icon
+                class=""
+                icon="fe:paper-plane"
+                style="color: #27ae60"
+                width="20"
+                height="20"
+              ></iconify-icon>
+              Sábado e Domingo: Fechado</span
+            >
+          </div>
+          <div dataScroll="slow" dataAnima="scroll">
+            <a href="#inicio">
+              <div class="top">
+                <iconify-icon
+                  class=""
+                  icon="ic:baseline-keyboard-arrow-up"
+                  style="color: #27ae60"
+                  width="58"
+                  height="58"
+                ></iconify-icon>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="icons_box">
-          <a href="#">
-            <iconify-icon
-              style="z-index: 999"
-              class="icon_img"
-              icon="mdi:linkedin"
-              width="30"
-              height="30"
-            ></iconify-icon>
-          </a>
+        <div class="icons_container">
+          <div class="icons_box">
+            <a href="#">
+              <iconify-icon
+                style="z-index: 999"
+                class="icon_img"
+                icon="fe:facebook"
+                width="30"
+                height="30"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="icons_box">
+            <a href="#">
+              <iconify-icon
+                style="z-index: 999"
+                class="icon_img"
+                icon="fe:twitter"
+                width="30"
+                height="30"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="icons_box">
+            <a href="#">
+              <iconify-icon
+                style="z-index: 999"
+                class="icon_img"
+                icon="fe:instagram"
+                width="30"
+                height="30"
+              ></iconify-icon>
+            </a>
+          </div>
+          <div class="icons_box">
+            <a href="#">
+              <iconify-icon
+                style="z-index: 999"
+                class="icon_img"
+                icon="mdi:linkedin"
+                width="30"
+                height="30"
+              ></iconify-icon>
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!--* LINK BIBLIOTECA SWEETALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!--* LINK JAVASCRIPT -->
-    <script src="js/navBar.js"></script>
     <script src="js/reset.js"></script>
     <script src="js/backToTheTop.js"></script>
     <script src="js/checkForm.js"></script>
