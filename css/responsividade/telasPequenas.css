@@ -46,6 +46,10 @@
         padding: 0 30px 0 30px;
         background-color: #f7f7f7a2;
     }
+
+    .img_about_responsive {
+        display: none;
+    }
     
     .title_box_choose_us {
         text-align: center;
