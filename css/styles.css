@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 /** ROTAS */ 
+
 .hidden {
     display: none;
 }
@@ -223,7 +224,7 @@ header .header-right .hamburger div {
 /** SEÇÃO DE COMIDAS */ 
 
 #foods_container {
-    margin-bottom: 9rem;
+    margin-bottom: 8.5rem;
 }
 
 .foods {
@@ -242,8 +243,9 @@ header .header-right .hamburger div {
     color: #fff;
 }
 
-.foods-margin-left {
+.foods_margin_left {
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .image_container {
@@ -261,7 +263,7 @@ header .header-right .hamburger div {
 /** SEÇÃO SOBRE */ 
 
 #about_container {
-    margin-bottom: 6.5rem;
+    margin-bottom: 9rem;
     border-radius: 10px;
     background-color: #f7f7f7a2;
 }
@@ -276,6 +278,10 @@ header .header-right .hamburger div {
 .title_box_delicious_food {
     color: #130f40;
     font-weight: 700;
+}
+
+.text_responsiv_about {
+    text-align: center;
 }
 
 .box_container_benefits {
@@ -309,11 +315,11 @@ header .header-right .hamburger div {
 /** SEÇÃO PRATOS ESPECIAIS*/ 
 
 #special_scroll_id {
-    margin-bottom: Entrega;
+    margin-bottom: 1rem;
 }
 
 #special_dishes_container {
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 .title_popular_food {
@@ -390,13 +396,15 @@ header .header-right .hamburger div {
 
 #ads_container_div {
     margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.position_absolute_ads_header {
+.position_absolute_ads {
     position: absolute;
-    top: 45%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    bottom: 33%;
+    left: 10%;
 }
 
 .title_double_cheese {
@@ -422,6 +430,7 @@ header .header-right .hamburger div {
 
 .ads_container {
     display: flex;
+    margin-bottom: 8rem;
     justify-content: space-between;
 }
 

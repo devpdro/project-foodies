@@ -1,0 +1,219 @@
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+   body {
+    background-color: red!important;
+   }
+   
+    /** CABEÇALHO */ 
+
+    #header_container {
+        margin-top: 5rem!important;
+        margin-bottom: 6rem!important;
+        padding: 0 30px 0 30px;
+    }
+
+    .img_header_box {
+        transition: all 0.4s ease;
+        margin-top: 5.3rem;
+    }
+
+    /** SEÇÃO DE COMIDAS */ 
+
+    #foods_container {
+    margin-bottom: 3.8rem!important;
+    display: flex;
+    }
+
+    .responsive_foods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foods {
+        background-color: #6666663d;
+        color: #130f40;
+        width: 210px;
+        height: 170px;
+        display: flex;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 2rem;
+    }
+
+    /** SEÇÃO SOBRE */ 
+
+    #about_container {
+        margin-bottom: 7rem;
+        border-radius: 10px;
+        padding: 0 30px 0 30px;
+        background-color: #f7f7f7a2;
+    }
+    
+    .title_box_choose_us {
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 1.9rem;
+        padding-top: 2rem;
+        color: #27ae60;
+    }
+
+    .title_box_delicious_food {
+        color: #130f40;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .box_container_benefits {
+        display: flex;
+        justify-content: space-evenly!important;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 0 0 40px;
+    }
+    
+    /** SEÇÃO PRATOS ESPECIAIS*/ 
+
+    #special_scroll_id {
+        margin-bottom: 1rem;
+    }
+
+    #special_dishes_container {
+        margin-bottom: 3rem!important;
+    }
+    
+    .div_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        flex-wrap: wrap;
+    }
+
+    /** SECTION ANUNCIOS */ 
+
+    #ads_container_div {
+    margin-bottom: 9rem!important;
+    }
+
+    .container_responsiv_ads {
+    position: relative;  
+    }
+
+
+    .img_box_responsiv_ads {
+        display: none;
+    }
+
+    .img_box_responsiv_ads_margin {
+        margin-top: 3rem;
+    }
+
+    .ads_container {
+        display: flex;
+        justify-content: center!important;
+        flex-wrap: wrap!important;
+        padding: 0 30px 0 30px;
+        margin-bottom: 7rem;
+    }
+
+    .position_absolute_ads {
+        position: absolute;
+        bottom: 33%;
+        left: 10%;
+        display: none;
+    }
+
+    /** SEÇÃO ENTREGA */ 
+
+    #delivery_container {
+        margin-bottom: 7.4rem;
+    }
+
+    .delivery_box_father_container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .delivery_box_container {
+        max-width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        text-align: center;
+        border-radius: 10px;
+        padding: 2px 40px;
+        background-color: #dadada13;
+        height: 300px;
+        align-items: center;
+    }
+
+    .home_delivery_container {
+        margin-top: 3rem;
+        display: flex!important;
+        flex-wrap: wrap;
+    }
+
+    .input_name_responsiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title_form {
+        color: #130f40;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    /** SEÇÃO BLOGS */ 
+
+    #blogs_container {
+        margin-bottom: 3.7rem;
+    }
+
+    .blogs_box_father_container {
+        margin-top: 1.7rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    /** SEÇÃO RODAPÉ */
+
+    #footer_container {
+        margin-bottom: 8rem;
+    }
+
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap!important;
+    }
+
+    .menu_box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .padding_between_boxes {
+        padding: 0 30px 0 30px;
+    }
+
+    .our_menu {
+        display: none!important;
+    }
+
+    .quick_links {
+        display: none!important;
+    }
+
+    .extra_links {
+        display: none!important;
+    }    
+}
