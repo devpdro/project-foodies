@@ -1,6 +1,25 @@
 @media screen and (min-width: 1280px) {
 
-    body {
-        background-color: rgb(0, 255, 64) !important;
+    #header_container {
+        margin-top: 5rem!important;
+        margin-bottom: 6.5rem!important;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /** SECTION ANUNCIOS */ 
+
+    .ads_container {
+        display: flex;
+        justify-content: center!important;
+        padding: 0 30px 0 30px;
+        margin-bottom: 7rem;
+    }
+
+    .img_box_responsiv_ads {
+        display: block;
+        padding: 0 3rem 0 3rem;
     }
 }
