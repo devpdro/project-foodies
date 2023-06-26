@@ -1,27 +1,50 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-
-   body {
-    background-color: red!important;
-   }
    
     /** CABEÇALHO */ 
 
     #header_container {
         margin-top: 5rem!important;
-        margin-bottom: 6rem!important;
-        padding: 0 30px 0 30px;
+        margin-bottom: 6.5rem!important;
+        margin-left: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+    .title_welcome {
+        text-align: left;
+        color: #27ae60 ;
+        margin-bottom: 0.7rem;
+        font-size: 1.7rem;
+    }
+
+    .title_different_tastes_text {
+        text-align: left;
+        font-size: 1.4rem!important;
+    }
+
+    .title_different_tastes {
+        margin-bottom: 0.8rem;
+        text-align: left;
+        color: #130f40;
+        font-size: 2.2rem; 
+    }
+
+    .button_order_now {
+        margin-top: 0.4rem;
+        background-color: #27ae60;
+        color: #fff;
+    }
+    
     .img_header_box {
         transition: all 0.4s ease;
-        margin-top: 5.3rem;
     }
 
     /** SEÇÃO DE COMIDAS */ 
 
     #foods_container {
-    margin-bottom: 3.8rem!important;
-    display: flex;
+        margin-bottom: 3.8rem!important;
+        display: flex;
     }
 
     .responsive_foods {
@@ -33,8 +56,8 @@
     .foods {
         background-color: #6666663d;
         color: #130f40;
-        width: 210px;
-        height: 170px;
+        width: 300px!important;
+        height: 150px;
         display: flex;
         border-radius: 5px;
         padding-top: 10px;
@@ -42,13 +65,27 @@
         margin-bottom: 2rem;
     }
 
+    
     /** SEÇÃO SOBRE */ 
 
     #about_container {
         margin-bottom: 7rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
         border-radius: 10px;
         padding: 0 30px 0 30px;
         background-color: #f7f7f7a2;
+    }
+
+    .box_about_responsive {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .img_about_responsive {
+        display: block!important;
     }
     
     .title_box_choose_us {
@@ -90,14 +127,26 @@
         flex-wrap: wrap;
     }
 
+    .box_special_dishes {
+        margin-top: 1.2rem;
+        background-color: #dadada49;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        position: relative;
+        width: 27rem!important;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
     /** SECTION ANUNCIOS */ 
 
     #ads_container_div {
-    margin-bottom: 9rem!important;
+        margin-bottom: 9rem!important;
     }
 
     .container_responsiv_ads {
-    position: relative;  
+        position: relative;  
     }
 
 
@@ -112,7 +161,6 @@
     .ads_container {
         display: flex;
         justify-content: center!important;
-        flex-wrap: wrap!important;
         padding: 0 30px 0 30px;
         margin-bottom: 7rem;
     }
@@ -122,6 +170,18 @@
         bottom: 33%;
         left: 10%;
         display: none;
+    }
+
+     /** SEÇÃO CARDAPIO */ 
+
+    .menu_box_foods {
+        display: flex; 
+        background-color: #dadada49;
+        align-items: center;
+        width: 28rem!important;
+        color: #130f40;
+        padding: 8px;
+        border-radius: 5px;
     }
 
     /** SEÇÃO ENTREGA */ 
@@ -134,7 +194,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        flex-wrap: wrap;
+        padding: 0 30px 0 30px;
         height: 100%;
     }
 
@@ -178,9 +238,9 @@
 
     .blogs_box_father_container {
         margin-top: 1.7rem;
+        padding: 0 30px 0 30px;
         display: flex;
         align-items: center;
-        flex-direction: column;
     }
     
 
@@ -203,14 +263,6 @@
     
     .padding_between_boxes {
         padding: 0 30px 0 30px;
-    }
-
-    .our_menu {
-        display: none!important;
-    }
-
-    .quick_links {
-        display: none!important;
     }
 
     .extra_links {
