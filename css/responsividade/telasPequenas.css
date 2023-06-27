@@ -33,7 +33,6 @@
         margin: 0 auto;
     }
 
-
     /** SEÇÃO DE COMIDAS */ 
 
     #foods_container {
@@ -93,6 +92,13 @@
         margin-bottom: 20px;
         padding: 0 0 0 40px;
     }
+
+    .icon_about {
+        margin-right: 1.1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1.1rem;
+    }
     
     /** SEÇÃO PRATOS ESPECIAIS*/ 
 
@@ -109,6 +115,12 @@
         justify-content: center;
         align-items: center;   
         flex-wrap: wrap;
+    }
+
+    .title_special_dishes {
+        color: #130f40;
+        font-weight: 700;
+        font-size: 2.1rem;
     }
 
     /** SECTION ANUNCIOS */ 
@@ -145,6 +157,9 @@
         display: none;
     }
 
+    /** SEÇÃO CARDAPIO */ 
+
+    
     /** SEÇÃO ENTREGA */ 
 
     #delivery_container {

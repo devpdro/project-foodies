@@ -16,12 +16,22 @@ Foddies was developed using the following technologies:
 To install and run the project, follow the steps below:
 
 - Clone this repository to your local environment:
-`git clone https://github.com/devpdro/projeto-food.git`
+```bash
+git clone https://github.com/devpdro/projeto-food.git
+```
 - Navigate to the project directory:
+```bash
 `cd seu-projeto`
+```
 - Install the project's dependencies:
+```bash
 `npm install`
+```
 - Start the development server:
+```bash
 `npm start`
+```
 - This will start the local server and provide a URL to view the project in your browser.
+```bash
 `Local: http://localhost:3000`
+```
