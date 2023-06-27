@@ -1,23 +1,27 @@
 # Foddies 🍽️
 ![Alt text](images/readme/post1.png)
-Você pode acessá-lo com esse [link.](https://projeto-food-two.vercel.app/)
-# Sobre o Projeto 💻
-O projeto Foddies é uma representação visual de um restaurante, criado com o objetivo de explorar conceitos de design e experiência do usuário. Embora seja um projeto fictício, foi desenvolvido com paixão e atenção aos detalhes para transmitir a atmosfera acolhedora e a qualidade que você esperaria encontrar em um restaurante de verdade.
-# Tecnologias 🚀
-Esse projeto foi desenvolvido com as seguintes ferramentas:
+You can access it with this [link.](https://projeto-food-two.vercel.app/)
+# 💻 About the project 
+The Foddies project is a visual representation of a restaurant, created with the aim of exploring design concepts and user experience. Although it is a fictional project, it was developed with passion and attention to detail to convey a warm atmosphere and quality you would expect to find in a real restaurant.
+# 🚀 Technologies 
+Foddies was developed using the following technologies:
 
-HTML5
-CSS3
-BootStrap
-JavaScript
+- HTML5
+- CSS3
+- BootStrap
+- JavaScript
+- SweetAlert2
+- Vercel
+# 🛠️ How to install the project and run it on your machine
+To install and run the project, follow the steps below:
 
-
-# acesso ao projeto
-
-# 📁 Acesso ao projeto
-
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
-
-# 🛠️ Abrir e rodar o projeto
-
-**Apresente as instruções necessárias para abrir e executar o projeto**
+- Clone this repository to your local environment:
+`git clone https://github.com/devpdro/projeto-food.git`
+- Navigate to the project directory:
+`cd seu-projeto`
+- Install the project's dependencies:
+`npm install`
+- Start the development server:
+`npm start`
+- This will start the local server and provide a URL to view the project in your browser.
+`Local: http://localhost:3000`
