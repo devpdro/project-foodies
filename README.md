@@ -21,17 +21,17 @@ git clone https://github.com/devpdro/projeto-food.git
 ```
 - Navigate to the project directory:
 ```bash
-`cd seu-projeto`
+cd seu-projeto
 ```
 - Install the project's dependencies:
 ```bash
-`npm install`
+npm install
 ```
 - Start the development server:
 ```bash
-`npm start`
+npm start
 ```
 - This will start the local server and provide a URL to view the project in your browser.
 ```bash
-`Local: http://localhost:3000`
+Local: http://localhost:3000
 ```
