@@ -241,7 +241,7 @@ nav ul li a:hover {
     padding: 1.1rem 0;
     font-weight: 700;
     font-size: 1.2rem;
-    box-shadow: 2px 2px 12px #0000001e;
+    box-shadow: 2px 2px 12px #00000010;
 }
 
 .icon_about {
@@ -301,7 +301,7 @@ nav ul li a:hover {
 
 .box_special_dishes {
     margin-top: 1.2rem;
-    background-color: #dadada49;
+    background-color: #dadada0a;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     position: relative;
@@ -443,7 +443,7 @@ nav ul li a:hover {
 
 .menu_box_foods {
    display: flex; 
-   background-color: #dadada49;
+   background-color: #dadada09;
    align-items: center;
    width: 23rem;
    color: #130f40;
