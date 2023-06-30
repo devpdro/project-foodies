@@ -21,7 +21,7 @@ git clone https://github.com/devpdro/projeto-food.git
 ```
 - Navigate to the project directory:
 ```bash
-cd seu-projeto
+cd projeto-food
 ```
 - Install the project's dependencies:
 ```bash
