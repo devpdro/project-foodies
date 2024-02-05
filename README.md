@@ -23,3 +23,5 @@ git clone https://github.com/devpdro/projeto-food.git
 ```bash
 cd projeto-food
 ```
+
+Made with ❤️ by Victor Hugo 👋
